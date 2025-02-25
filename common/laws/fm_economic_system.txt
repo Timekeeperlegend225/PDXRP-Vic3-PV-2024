@@ -270,7 +270,6 @@ law_laissez_faire = {
 	disallowing_laws = {
 		law_serfdom
 		law_isolationism
-		law_anarchy
 	}
 	
 	unlocking_technologies = {
