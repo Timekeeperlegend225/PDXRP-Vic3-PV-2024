@@ -596,16 +596,16 @@
 	DECLARE_INTEREST_RIVAL_FACTOR = 25 # For each rival with an interest in the region
 	DECLARE_INTEREST_SUPPORTS_TRADE_ROUTE_FACTOR = 1000 # Add if this interest is in a market with which we have a trade route (and there is no other interest that would support it)
 	DECLARE_INTEREST_SUPPORTS_DIPLOMATIC_PACT_FACTOR = 1000 # Add if this interest is in a country with which we have a diplomatic pact (and there is no other interest that would support it)
-	DECLARE_INTEREST_SUPPORTS_GROWING_COLONY_FACTOR = 1000 # Add if this interest is in a region where we have a growing colony
+	DECLARE_INTEREST_SUPPORTS_GROWING_COLONY_FACTOR = 0 # Add if this interest is in a region where we have a growing colony
 	DECLARE_INTEREST_ADJACENT_REGION_MULT = 2.5 # Multiply score by this if the region is adjacent to the AI country
 
 	# If an AI country has too many colonial/non-colonial interests, subtract the score of those type of interests by this
 	DECLARE_INTEREST_WRONG_INTEREST_TYPE_FACTOR = -100
 
 	# Below data is used to determine which states should be colonized first
-	NUM_GROWING_COLONIES_BASE = 1 # How many colonies will the AI keep growing at once (base amount)
+	NUM_GROWING_COLONIES_BASE = 0 # How many colonies will the AI keep growing at once (base amount)
 	NUM_GROWING_COLONIES_SCALED = 0.01 # 1 extra colony at once per this amount of colonial growth points
-	NUM_GROWING_COLONIES_MAX = 5 # No more than this amount of growing colonies at once, regardless of amount of colonial growth points
+	NUM_GROWING_COLONIES_MAX = 0 # No more than this amount of growing colonies at once, regardless of amount of colonial growth points
 	COLONY_BASE_WEIGHT = 50
 	COLONY_POPULATION_WEIGHT = 0.2	# Per 10000 pops
 	COLONY_ARABLE_LAND_WEIGHT = 10
