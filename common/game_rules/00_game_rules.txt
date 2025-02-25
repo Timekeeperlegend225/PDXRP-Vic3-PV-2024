@@ -40,7 +40,7 @@ ai_behavior = {
 }
 
 ai_ideas = {
-	default = yes_ai_ideas
+	default = no_ai_ideas
 
 	yes_ai_ideas = {
 	}
