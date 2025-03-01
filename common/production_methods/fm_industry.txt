@@ -1126,9 +1126,9 @@ pm_electrified_rolling_mills = {
     unlocking_technologies = {continuous_casting_process}
 
     state_modifiers = {  
-        workforce_scaled = {  
-            state_construction_mult = 0.10  # Faster construction from standardized steel
-        }  
+#        workforce_scaled = {  
+#           state_construction_mult = 0.10  # Faster construction from standardized steel
+#        }  
     }
 
     building_modifiers = {  
