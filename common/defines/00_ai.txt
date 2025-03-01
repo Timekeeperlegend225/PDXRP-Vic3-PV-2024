@@ -313,7 +313,7 @@
 	# In order for a country to join, their side preference score must beat out both the enemy's side preference score AND the neutrality score
 	# Base neutrality is set by the country's AI strategies
 	DIPLO_PLAY_NEUTRALITY_MIN = 0
-	DIPLO_PLAY_NEUTRALITY_PREFERENCE_DELTA_THRESHOLD = 100 # If the preference delta between the two sides is less than this, add the difference between the delta and this value to neutrality score
+	DIPLO_PLAY_NEUTRALITY_PREFERENCE_DELTA_THRESHOLD = 70 # If the preference delta between the two sides is less than this, add the difference between the delta and this value to neutrality score
 	DIPLO_PLAY_NEUTRALITY_FROM_DEBT_LEVEL = 100 # At 100% debt level, add this amount of neutrality score
 	DIPLO_PLAY_NEUTRALITY_FROM_BANKRUPTCY = 100 # When bankrupt, add this amount of neutrality score
 	DIPLO_PLAY_NEUTRALITY_FROM_DEVASTATION_LEVEL = 100 # At 100% devastation across the country (weighted by state population), add this amount of neutrality score
