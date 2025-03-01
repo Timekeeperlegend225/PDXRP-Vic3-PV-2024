@@ -1081,8 +1081,8 @@ pm_acidic_bessemer_conversion = {
 
     state_modifiers = {  
         workforce_scaled = {  
-          state_pollution_generation_add = 18  # Increased slag waste  
-        }  
+            state_pollution_generation_add = 5 # Increased slag waste  
+          } 
       }  
       building_modifiers = {  
         workforce_scaled = {  
@@ -1103,8 +1103,8 @@ pm_nickel_and_steel_armor_plating = {
     unlocking_technologies = {alloy_steel_integration}
     state_modifiers = {  
         workforce_scaled = {  
-          state_infrastructure_add = 10  # Stronger steel improves railways/ships  
-        }  
+            state_pollution_generation_add = 5 # Increased slag waste  
+          }
       }  
       building_modifiers = {  
         workforce_scaled = {  
@@ -1126,9 +1126,9 @@ pm_electrified_rolling_mills = {
     unlocking_technologies = {continuous_casting_process}
 
     state_modifiers = {  
-#        workforce_scaled = {  
-#           state_construction_mult = 0.10  # Faster construction from standardized steel
-#        }  
+        workforce_scaled = {  
+            state_pollution_generation_add = 5 # Increased slag waste  
+          } 
     }
 
     building_modifiers = {  
