@@ -470,7 +470,7 @@
  
  gm_actions.100.t:0 "Special Event Menu"
  gm_actions.100.a:0 "Cancel"
- gm_actions.100.b:0 "SNEED Modifier"
+ gm_actions.100.b:0 "Remove Bankrucy"
  gm_actions.100.c:0 "Austria Modifier"
  gm_actions.100.d:0 "Black Tuesday"
  gm_actions.100.e:0 "Black Tuesday Recovery"
