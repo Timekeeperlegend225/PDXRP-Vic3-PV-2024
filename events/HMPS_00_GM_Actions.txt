@@ -8377,11 +8377,25 @@ gm_actions.100 = {
 	}
 	
 	option = {
-		name = gm_actions.101.t
+		name = gm_actions.100.b
 		trigger_event = {
 			id = gm_actions.101
 			days = 0
 			popup = yes
+		}
+	}
+	
+	option = {
+		name = balance_modifier_mod
+		trigger = {
+			scope:recipient = {
+				has_modifier = declared_bankruptcy
+			}
+		}
+		remove_global_variable = GM_taking_action
+		scope:recipient = {
+			remove_variable = actionee
+			remove_modifier = declared_bankruptcy
 		}
 	}
 }
