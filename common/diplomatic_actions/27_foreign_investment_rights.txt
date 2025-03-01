@@ -30,6 +30,23 @@
 		}
 	}
 
+	possible = {
+		root = {
+			OR = { 
+				is_subject_type = subject_type_protectorate
+				is_subject_type = subject_type_tributary
+				is_subject = no 
+			}
+		}
+		scope:target_country = {
+			OR = { 
+				is_subject_type = subject_type_protectorate
+				is_subject_type = subject_type_tributary
+				is_subject = no 
+			}
+		}
+	}
+
 	pact = {
 		cost = 0
 		recipient_pays_maintenance = no
@@ -761,7 +778,22 @@ grant_foreign_investment_rights = {
 		custom_tooltip = {
 			text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT
 			scope:target_country.relations:root > relations_threshold:poor
-		}					
+		}
+
+		root = {
+			OR = { 
+				is_subject_type = subject_type_protectorate
+				is_subject_type = subject_type_tributary
+				is_subject = no 
+			}
+		}
+		scope:target_country = {
+			OR = { 
+				is_subject_type = subject_type_protectorate
+				is_subject_type = subject_type_tributary
+				is_subject = no 
+			}
+		}		
 	}
 
 

@@ -26,8 +26,19 @@
 	}
 
 	possible = {
+		root = {
+			OR = { 
+				is_subject_type = subject_type_protectorate
+				is_subject_type = subject_type_tributary
+				is_subject = no 
+			}
+		}
 		scope:target_country = {
-			has_technology_researched = stock_exchange
+			OR = { 
+				is_subject_type = subject_type_protectorate
+				is_subject_type = subject_type_tributary
+				is_subject = no 
+			}
 		}
 	}
 
