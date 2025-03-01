@@ -230,13 +230,13 @@
 	DIPLO_PLAY_SWAY_THRESHOLD = 2.0 # If AI has this much military strength compared to enemy, don't bother trying to sway anyone
 	DIPLO_PLAY_REVERSE_SWAY_THRESHOLD = 2.0 # If AI has this much military strength compared to enemy, consider reverse sways to have less value
 	DIPLO_PLAY_SWAY_LEANING_SIDE_MILITARY_STRENGTH_MULT = 0.25 # When determining strength compared to enemy, add in undecided countries leaning towards a side with this part of their strength
-	DIPLO_PLAY_DECIDE_ON_SUPPORT_ESCALATION = 30 # Above this escalation, AI will potentially start taking sides (or declare neutrality) even if not swayed
-	DIPLO_PLAY_TAKE_SIDES_MIN_BOLDNESS = 25 # Boldness must be at least this for AI to want to take a side with no gain (ignored for Great Powers in containment plays)
+	DIPLO_PLAY_DECIDE_ON_SUPPORT_ESCALATION = 20 # Above this escalation, AI will potentially start taking sides (or declare neutrality) even if not swayed
+	DIPLO_PLAY_TAKE_SIDES_MIN_BOLDNESS = 200 # Boldness must be at least this for AI to want to take a side with no gain (ignored for Great Powers in containment plays)
 	DIPLO_PLAY_TAKE_SIDES_CHANCE = 0.001 # Multiplied by boldness for chance of taking sides each tick
 	DIPLO_PLAY_DECLARE_NEUTRALITY_ESCALATION_MIN_BASE = 80 # Lowest escalation at which AI can declare neutrality, AIs with a preference will never declare neutrality before countdown to war
 	DIPLO_PLAY_DECLARE_NEUTRALITY_IMPACT_OF_NEUTRALITY_SCORE = 0.5 # AI's neutrality score * this is subtracted from DIPLO_PLAY_DECLARE_NEUTRALITY_ESCALATION_MIN_BASE
 	DIPLO_PLAY_DECLARE_NEUTRALITY_IMPACT_OF_NEUTRALITY_SCORE_MAX = 50 # DIPLO_PLAY_DECLARE_NEUTRALITY_IMPACT_OF_NEUTRALITY_SCORE cannot be higher than this
-	DIPLO_PLAY_DECLARE_NEUTRALITY_ESCALATION_MAX = 99 # Highest escalation at which AI can declare neutrality
+	DIPLO_PLAY_DECLARE_NEUTRALITY_ESCALATION_MAX = 120 # Highest escalation at which AI can declare neutrality
 	DIPLO_PLAY_ABANDON_SUPPORT_CHANCE = 0.1 # Multiplied with negative support score
 	DIPLO_PLAY_SWAY_COUNTRIES_ESCALATION = 10 # Above this escalation, AI will potentially start swaying countries
 	DIPLO_PLAY_REVERSE_SWAY_COUNTRIES_CHANCE_SCALED = 0.005 # Chance each tick that the AI will try to reverse-sway (scaled by boldness)
@@ -278,7 +278,7 @@
 	# Each individual boldness factor is multiplied a dice roll range of (x0 to x1) for actual boldness value in each play - boldness can end up negative!
 	# Boldness also plays a role for determining whether undecided countries will join a play unprompted
 	# Base boldness is set by the country's AI strategies
-	DIPLO_PLAY_BOLDNESS_FROM_RANK = 3 			# Multiplied by country's rank value and added to boldness range
+	DIPLO_PLAY_BOLDNESS_FROM_RANK = 2 			# Multiplied by country's rank value and added to boldness range
 	DIPLO_PLAY_BOLDNESS_WEAK_ARMY_FACTOR = -25 	# Scaled by our relative forces compared to DIPLO_PLAY_WEAK_ARMY_THRESHOLD
 	DIPLO_PLAY_BOLDNESS_CONTAINMENT_PLAY = 100	# Add this boldness to all involved countries for a containment play
 
@@ -313,14 +313,14 @@
 	# In order for a country to join, their side preference score must beat out both the enemy's side preference score AND the neutrality score
 	# Base neutrality is set by the country's AI strategies
 	DIPLO_PLAY_NEUTRALITY_MIN = 0
-	DIPLO_PLAY_NEUTRALITY_PREFERENCE_DELTA_THRESHOLD = 50 # If the preference delta between the two sides is less than this, add the difference between the delta and this value to neutrality score
+	DIPLO_PLAY_NEUTRALITY_PREFERENCE_DELTA_THRESHOLD = 100 # If the preference delta between the two sides is less than this, add the difference between the delta and this value to neutrality score
 	DIPLO_PLAY_NEUTRALITY_FROM_DEBT_LEVEL = 100 # At 100% debt level, add this amount of neutrality score
 	DIPLO_PLAY_NEUTRALITY_FROM_BANKRUPTCY = 100 # When bankrupt, add this amount of neutrality score
 	DIPLO_PLAY_NEUTRALITY_FROM_DEVASTATION_LEVEL = 100 # At 100% devastation across the country (weighted by state population), add this amount of neutrality score
 	DIPLO_PLAY_NEUTRALITY_FROM_TURMOIL = 100 # At 100% turmoil across the country (weighted by state population), add this amount of neutrality score
 	DIPLO_PLAY_NEUTRALITY_IN_SUBJECT_CONFLICT = -50 # If either side in the play is a subject, subtract this amount of neutrality score
 	DIPLO_PLAY_NEUTRALITY_IN_NATIVE_UPRISING = 50 # Added to neutrality score for native uprising type conflicts
-	DIPLO_PLAY_NEUTRALITY_FROM_ONGOING_CONFLICTS = 200 # If in a conflict where military strength compared to the enemy is equal to or above DIPLO_PLAY_FORCE_BALANCE_SCALE, add this amount of neutrality score
+	DIPLO_PLAY_NEUTRALITY_FROM_ONGOING_CONFLICTS = 250 # If in a conflict where military strength compared to the enemy is equal to or above DIPLO_PLAY_FORCE_BALANCE_SCALE, add this amount of neutrality score
 	DIPLO_PLAY_NEUTRALITY_FROM_LOWER_RANK = 5 # For each rank value difference between us and the lowest ranked participant in the play, if we're higher rank than them
 	DIPLO_PLAY_NEUTRALITY_FROM_NO_ARMY = 1000 # If we have no army at all, add this to neutrality score
 	DIPLO_PLAY_NEUTRALITY_WEAK_ARMY_FACTOR = 100 # Scaled by our relative forces compared to DIPLO_PLAY_WEAK_ARMY_THRESHOLD
@@ -330,9 +330,9 @@
 	# Sympathy above 0 is added directly to the willingness to join that side in the play
 	# Sympathy for a side can be below 0, but has no additional effect other than acting as a buffer against sympathy increases
 	DIPLO_PLAY_SYMPATHY_RANGE_MIN = 0.1 # The minimum range for the initial sympathy random roll (additions during play are fully random)
-	DIPLO_PLAY_SYMPATHY_RANGE_MAX = 1.0 # The maximum range for the initial sympathy random roll (additions during play are fully random)
+	DIPLO_PLAY_SYMPATHY_RANGE_MAX = 0.5 # The maximum range for the initial sympathy random roll (additions during play are fully random)
 	DIPLO_PLAY_SYMPATHY_BASE_INITIATOR = 20 # The base size of the random sympathy range for attacker in diplomatic play
-	DIPLO_PLAY_SYMPATHY_BASE_TARGET = 40 # The base size of the random sympathy range for defender in diplomatic play
+	DIPLO_PLAY_SYMPATHY_BASE_TARGET = 20 # The base size of the random sympathy range for defender in diplomatic play
 	DIPLO_PLAY_SYMPATHY_ENEMY_OF_SUBJECT_INITIATOR = -100 # Subtracted from sympathy range for enemies of our subjects if the enemy is the attacker
 	DIPLO_PLAY_SYMPATHY_ENEMY_OF_SUBJECT_TARGET = -50 # Subtracted from sympathy range for enemies of our subjects if the enemy is the defender
 	DIPLO_PLAY_SYMPATHY_ENEMY_OF_ALLY_INITIATOR = -100 # Subtracted from sympathy range for enemies of our allies if the enemy is the attacker
