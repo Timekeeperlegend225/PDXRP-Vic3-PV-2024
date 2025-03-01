@@ -50,11 +50,11 @@
 	}	
 	
 	diplomatic_play_neutrality = {
-		value = 0
+		value = 40
 	}
 	
 	diplomatic_play_boldness = {
-		value = -25
+		value = -40
 	}
 	
 	recklessness = {
@@ -203,7 +203,7 @@ ai_strategy_territorial_expansion = {
 	}		
 	
 	diplomatic_play_neutrality = {
-		value = 25
+		value = 50
 	}
 	
 	diplomatic_play_boldness = {
@@ -398,11 +398,11 @@ ai_strategy_colonial_expansion = {
 	}		
 	
 	diplomatic_play_neutrality = {
-		value = 25
+		value = 50
 	}
 	
 	diplomatic_play_boldness = {
-		value = -15
+		value = -25
 	}
 	
 	recklessness = {
@@ -747,11 +747,11 @@ ai_strategy_armed_isolationism = {
 	}		
 	
 	diplomatic_play_neutrality = {
-		value = 50
+		value = 80
 	}
 	
 	diplomatic_play_boldness = {
-		value = 0
+		value = -25
 	}
 	
 	recklessness = {
@@ -903,11 +903,11 @@ ai_strategy_economic_imperialism = {
 	}
 	
 	diplomatic_play_neutrality = {
-		value = 10
+		value = 25
 	}
 	
 	diplomatic_play_boldness = {
-		value = -10
+		value = -25
 	}
 	
 	recklessness = {
@@ -1312,7 +1312,7 @@ ai_strategy_unify_ethiopia = {
 	}		
 		
 	diplomatic_play_neutrality = {
-		value = 0
+		value = 25
 	}
 	
 	diplomatic_play_boldness = {
@@ -1502,7 +1502,7 @@ ai_strategy_unify_china = {
 	}		
 		
 	diplomatic_play_neutrality = {
-		value = 0
+		value = 25
 	}
 	
 	diplomatic_play_boldness = {
@@ -1697,7 +1697,7 @@ ai_strategy_socialism_in_one_country = {
 	}		
 	
 	diplomatic_play_neutrality = {
-		value = 50
+		value = 80
 	}
 	
 	diplomatic_play_boldness = {
@@ -1843,7 +1843,7 @@ ai_strategy_world_revolution = {
 	}		
 	
 	diplomatic_play_neutrality = {
-		value = 0
+		value = 25
 	}
 	
 	diplomatic_play_boldness = {
@@ -2065,7 +2065,7 @@ ai_strategy_anti_imperialism = {
 	}	
 	
 	diplomatic_play_neutrality = {
-		value = 0
+		value = 20
 	}
 	
 	diplomatic_play_boldness = {
@@ -2281,7 +2281,7 @@ ai_strategy_restore_natural_borders = {
 	}		
 	
 	diplomatic_play_neutrality = {
-		value = 25
+		value = 50
 	}
 	
 	diplomatic_play_boldness = {
