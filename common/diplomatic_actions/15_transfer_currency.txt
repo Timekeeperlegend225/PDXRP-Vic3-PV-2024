@@ -29,6 +29,14 @@ transfer_currency = {
 				has_variable = currency_one
 			}
 		}
+		scope:target_country = {
+			OR = { 
+				is_subject_type = subject_type_protectorate
+				is_subject_type = subject_type_tributary
+				is_subject = no 
+				is_subject_of = root
+			}
+		}
 	}
 
 	accept_effect = {
