@@ -6011,7 +6011,7 @@ gm_actions.70 = {
 		name = gm_actions.70.d
 		scope:recipient = {
 			add_loyalists = {
-				value = 0.5
+				value = 0.05
 			}
 		}
 		trigger_event = {
@@ -6025,7 +6025,7 @@ gm_actions.70 = {
 		name = gm_actions.70.e
 		scope:recipient = {
 			add_radicals = {
-				value = 0.5
+				value = 0.05
 			}
 		}
 		trigger_event = {
