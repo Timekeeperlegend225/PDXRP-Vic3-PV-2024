@@ -5928,7 +5928,6 @@ gm_actions.70 = {
 	placement = ROOT
 	title = gm_actions.70.t
 	desc = gm_actions.70.u
-	#flavor = gm_actions.70.f
 
 	event_image = {
 		texture = "gfx/event_pictures/1character_4flags.dds"
@@ -6006,6 +6005,34 @@ gm_actions.70 = {
 			remove_variable = actionee
 		}
 		remove_global_variable = GM_taking_action
+	}
+	
+	option = {
+		name = gm_actions.70.d
+		scope:recipient = {
+			add_loyalists = {
+				value = 0.5
+			}
+		}
+		trigger_event = {
+			id = gm_actions.70
+			days = 0
+			popup = yes
+		}
+	}
+	
+	option = {
+		name = gm_actions.70.e
+		scope:recipient = {
+			add_radicals = {
+				value = 0.5
+			}
+		}
+		trigger_event = {
+			id = gm_actions.70
+			days = 0
+			popup = yes
+		}
 	}
 }
 
