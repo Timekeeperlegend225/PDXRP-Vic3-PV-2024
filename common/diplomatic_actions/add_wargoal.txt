@@ -23,13 +23,7 @@ demand_conquest = {
 	}
 	
 	possible = {
-	OR = {
-	ROOT = { limit = { is_ai = yes }
-	has_game_rule = ai_wargoals_allowed
-	NOT = { root = { infamy >= 24.9 } }
-	}
 	ROOT = { is_ai = no }
-	}
 	custom_tooltip = {
 		text = "WAR_NOT_WELL_ENOUGH"
 		ROOT = {
@@ -166,25 +160,19 @@ demand_return_claim = {
 	}
 	
 	possible = {
-	OR = {
-	ROOT = { limit = { is_ai = yes }
-	has_game_rule = ai_wargoals_allowed
-	NOT = { root = { infamy >= 49.9 } }
-	}
-	ROOT = { is_ai = no }
-	}
-	custom_tooltip = {
-		text = "WAR_NOT_WELL_ENOUGH"
-		ROOT = {
-		  NOT = { enemy_occupation > 0.15 }
+		ROOT = { is_ai = no }
+		custom_tooltip = {
+			text = "WAR_NOT_WELL_ENOUGH"
+			ROOT = {
+			  NOT = { enemy_occupation > 0.15 }
+			}
 		}
-	 }
-	custom_tooltip = {
-		text = "WARGOAL_ON_COOLDOWN"
-		ROOT = {
-			NOT = { has_variable = war_goal_add_cooldown }
+		custom_tooltip = {
+			text = "WARGOAL_ON_COOLDOWN"
+			ROOT = {
+				NOT = { has_variable = war_goal_add_cooldown }
+			}
 		}
-	 }
 	}
 
 	second_state_trigger = {
@@ -311,26 +299,20 @@ demand_treaty_port = {
 	}
 	
 	possible = {
-	OR = {
-	ROOT = { limit = { is_ai = yes }
-	has_game_rule = ai_wargoals_allowed
-	NOT = { root = { infamy >= 49.9 } }
-	}
-	ROOT = { is_ai = no }
-	}
-	custom_tooltip = {
-		text = "WAR_NOT_WELL_ENOUGH"
-		ROOT = {
-		   NOT = { enemy_occupation > 0.15 }
-		}
-	 }
+		ROOT = { is_ai = no }
 		custom_tooltip = {
-		text = "WARGOAL_ON_COOLDOWN"
-		ROOT = {
-			NOT = { has_variable = war_goal_add_cooldown }
+			text = "WAR_NOT_WELL_ENOUGH"
+			ROOT = {
+			   NOT = { enemy_occupation > 0.15 }
+			}
+		}
+		custom_tooltip = {
+			text = "WARGOAL_ON_COOLDOWN"
+			ROOT = {
+				NOT = { has_variable = war_goal_add_cooldown }
+			}
 		}
 	}
-}
 	
 	second_state_trigger = {
 		owner = scope:target_country
@@ -454,25 +436,19 @@ demand_war_reps = {
 	}
 	
 	possible = {
-	OR = {
-	ROOT = { limit = { is_ai = yes }
-	has_game_rule = ai_wargoals_allowed
-	NOT = { root = { infamy >= 49.9 } }
-	}
-	ROOT = { is_ai = no }
-	}
-	custom_tooltip = {
-		text = "WAR_NOT_WELL_ENOUGH"
-		ROOT = {
-		   NOT = { enemy_occupation > 0.15 }
-		}
-	 }
+		ROOT = { is_ai = no }
 		custom_tooltip = {
-		text = "WARGOAL_ON_COOLDOWN"
-		ROOT = {
-			NOT = { has_variable = war_goal_add_cooldown }
+			text = "WAR_NOT_WELL_ENOUGH"
+			ROOT = {
+			   NOT = { enemy_occupation > 0.15 }
+			}
 		}
-	 }
+		custom_tooltip = {
+			text = "WARGOAL_ON_COOLDOWN"
+			ROOT = {
+				NOT = { has_variable = war_goal_add_cooldown }
+			}
+		}
 		ROOT = {
 			NOT = {
 				war_participant_has_war_goal_of_type_against = {
@@ -565,25 +541,19 @@ demand_ban_slavery = {
 	}
 	
 	possible = {
-	OR = {
-	ROOT = { limit = { is_ai = yes }
-	has_game_rule = ai_wargoals_allowed
-	NOT = { root = { infamy >= 49.9 } }
-	}
-	ROOT = { is_ai = no }
-	}
-	custom_tooltip = {
-		text = "WAR_NOT_WELL_ENOUGH"
-		ROOT = {
-		   NOT = { enemy_occupation > 0.15 }
-		}
-	 }
+		ROOT = { is_ai = no }
 		custom_tooltip = {
-		text = "WARGOAL_ON_COOLDOWN"
-		ROOT = {
-			NOT = { has_variable = war_goal_add_cooldown }
+			text = "WAR_NOT_WELL_ENOUGH"
+			ROOT = {
+			   NOT = { enemy_occupation > 0.15 }
+			}
 		}
-	 }
+		custom_tooltip = {
+			text = "WARGOAL_ON_COOLDOWN"
+			ROOT = {
+				NOT = { has_variable = war_goal_add_cooldown }
+			}
+		}
 		ROOT = {
 			NOT = {
 				war_participant_has_war_goal_of_type_against = {
@@ -687,25 +657,19 @@ demand_iraqi_freedom = {
 	}
 	
 	possible = {
-	OR = {
-	ROOT = { limit = { is_ai = yes }
-	has_game_rule = ai_wargoals_allowed
-	NOT = { root = { infamy >= 49.9 } }
-	}
-	ROOT = { is_ai = no }
-	}
-	custom_tooltip = {
-		text = "WAR_NOT_WELL_ENOUGH"
-		ROOT = {
-		   NOT = { enemy_occupation > 0.15 }
-		}
-	 }
+		ROOT = { is_ai = no }
 		custom_tooltip = {
-		text = "WARGOAL_ON_COOLDOWN"
-		ROOT = {
-			NOT = { has_variable = war_goal_add_cooldown }
+			text = "WAR_NOT_WELL_ENOUGH"
+			ROOT = {
+			   NOT = { enemy_occupation > 0.15 }
+			}
 		}
-	 }
+		custom_tooltip = {
+			text = "WARGOAL_ON_COOLDOWN"
+			ROOT = {
+				NOT = { has_variable = war_goal_add_cooldown }
+			}
+		}
 		ROOT = {
 			NOT = {
 				war_participant_has_war_goal_of_type_against = {
@@ -810,26 +774,19 @@ demand_containment = {
 	}
 	
 	possible = {
-	OR = {
-	ROOT = { limit = { is_ai = yes }
-	has_game_rule = ai_wargoals_allowed
-	NOT = { root = { infamy >= 49.9 } }
-	}
-	ROOT = { is_ai = no }
-	}
-	custom_tooltip = {
-		text = "WAR_NOT_WELL_ENOUGH"
-		ROOT = {
-		   NOT = { enemy_occupation > 0.15 }
-		}
-	 }
+		ROOT = { is_ai = no }
 		custom_tooltip = {
-		text = "WARGOAL_ON_COOLDOWN"
-		ROOT = {
-			NOT = { has_variable = war_goal_add_cooldown }
+			text = "WAR_NOT_WELL_ENOUGH"
+			ROOT = {
+			   NOT = { enemy_occupation > 0.15 }
+			}
 		}
-	  }
-	 
+		custom_tooltip = {
+			text = "WARGOAL_ON_COOLDOWN"
+			ROOT = {
+				NOT = { has_variable = war_goal_add_cooldown }
+			}
+		}
 		ROOT = {
 			NOT = {
 				war_participant_has_war_goal_of_type_against = {
@@ -924,26 +881,19 @@ demand_standard_oil = {
 	}
 	
 	possible = {
-	OR = {
-	ROOT = { limit = { is_ai = yes }
-	has_game_rule = ai_wargoals_allowed
-	NOT = { root = { infamy >= 49.9 } }
-	}
-	ROOT = { is_ai = no }
-	}
-	custom_tooltip = {
-		text = "WAR_NOT_WELL_ENOUGH"
-		ROOT = {
-		   NOT = { enemy_occupation > 0.15 }
-		}
-	 }
+		ROOT = { is_ai = no }
 		custom_tooltip = {
-		text = "WARGOAL_ON_COOLDOWN"
-		ROOT = {
-			NOT = { has_variable = war_goal_add_cooldown }
+			text = "WAR_NOT_WELL_ENOUGH"
+			ROOT = {
+			   NOT = { enemy_occupation > 0.15 }
+			}
 		}
-	 }
-		
+		custom_tooltip = {
+			text = "WARGOAL_ON_COOLDOWN"
+			ROOT = {
+				NOT = { has_variable = war_goal_add_cooldown }
+			}
+		}		
 		ROOT = {
 			NOT = {
 				war_participant_has_war_goal_of_type_against = {
@@ -1038,26 +988,19 @@ demand_humiliation = {
 	}
 	
 	possible = {
-	OR = {
-	ROOT = { limit = { is_ai = yes }
-	has_game_rule = ai_wargoals_allowed
-	NOT = { root = { infamy >= 49.9 } }
-	}
-	ROOT = { is_ai = no }
-	}
-	custom_tooltip = {
-		text = "WAR_NOT_WELL_ENOUGH"
-		ROOT = {
-		   NOT = { enemy_occupation > 0.15 }
-		}
-	 }
+		ROOT = { is_ai = no }
 		custom_tooltip = {
-		text = "WARGOAL_ON_COOLDOWN"
-		ROOT = {
-			NOT = { has_variable = war_goal_add_cooldown }
+			text = "WAR_NOT_WELL_ENOUGH"
+			ROOT = {
+			   NOT = { enemy_occupation > 0.15 }
+			}
 		}
-	 }
-		
+		custom_tooltip = {
+			text = "WARGOAL_ON_COOLDOWN"
+			ROOT = {
+				NOT = { has_variable = war_goal_add_cooldown }
+			}
+		}	
 		ROOT = {
 			NOT = {
 				war_participant_has_war_goal_of_type_against = {
@@ -1155,25 +1098,19 @@ demand_dominion = {
 	}
 	
 	possible = {
-	OR = {
-	ROOT = { limit = { is_ai = yes }
-	has_game_rule = ai_wargoals_allowed
-	NOT = { root = { infamy >= 49.9 } }
-	}
-	ROOT = { is_ai = no }
-	}
-	custom_tooltip = {
-		text = "WAR_NOT_WELL_ENOUGH"
-		ROOT = {
-		   NOT = { enemy_occupation > 0.15 }
-		}
-	 }
+		ROOT = { is_ai = no }
 		custom_tooltip = {
-		text = "WARGOAL_ON_COOLDOWN"
-		ROOT = {
-			NOT = { has_variable = war_goal_add_cooldown }
+			text = "WAR_NOT_WELL_ENOUGH"
+			ROOT = {
+			   NOT = { enemy_occupation > 0.15 }
+			}
 		}
-	 }
+		custom_tooltip = {
+			text = "WARGOAL_ON_COOLDOWN"
+			ROOT = {
+				NOT = { has_variable = war_goal_add_cooldown }
+			}
+		}
 	
 		ROOT = {
 			NOT = {
@@ -1277,19 +1214,13 @@ demand_protectorate2 = {
 	}
 	
 	possible = {
-	OR = {
-	ROOT = { limit = { is_ai = yes }
-	has_game_rule = ai_wargoals_allowed
-	NOT = { root = { infamy >= 49.9 } }
-	}
-	ROOT = { is_ai = no }
-	}
+		ROOT = { is_ai = no }
 		custom_tooltip = {
-		text = "WAR_NOT_WELL_ENOUGH"
-		ROOT = {
-		   NOT = { enemy_occupation > 0.15 }
+			text = "WAR_NOT_WELL_ENOUGH"
+			ROOT = {
+			   NOT = { enemy_occupation > 0.15 }
+			}
 		}
-	 }
 		ROOT = {
 			NOT = {
 				war_participant_has_war_goal_of_type_against = {
@@ -1387,26 +1318,19 @@ demand_transfer_subject = {
 	}
 	
 	possible = {
-	OR = {
-	ROOT = { limit = { is_ai = yes }
-	has_game_rule = ai_wargoals_allowed
-	NOT = { root = { infamy >= 49.9 } }
-	}
-	ROOT = { is_ai = no }
-	}
-	custom_tooltip = {
-		text = "WAR_NOT_WELL_ENOUGH"
-		ROOT = {
-		   NOT = { enemy_occupation > 0.15 }
-		}
-	 }
+		ROOT = { is_ai = no }
 		custom_tooltip = {
-		text = "WARGOAL_ON_COOLDOWN"
-		ROOT = {
-			NOT = { has_variable = war_goal_add_cooldown }
+			text = "WAR_NOT_WELL_ENOUGH"
+			ROOT = {
+			   NOT = { enemy_occupation > 0.15 }
+			}
 		}
-	 }
-	
+		custom_tooltip = {
+			text = "WARGOAL_ON_COOLDOWN"
+			ROOT = {
+				NOT = { has_variable = war_goal_add_cooldown }
+			}
+		}
 		ROOT = {
 			NOT = {
 				war_participant_has_war_goal_of_type_against = {
@@ -1504,26 +1428,19 @@ demand_liberate_subject = {
 	}
 	
 	possible = {
-	OR = {
-	ROOT = { limit = { is_ai = yes }
-	has_game_rule = ai_wargoals_allowed
-	NOT = { root = { infamy >= 49.9 } }
-	}
-	ROOT = { is_ai = no }
-	}
-	custom_tooltip = {
-		text = "WAR_NOT_WELL_ENOUGH"
-		ROOT = {
-		   NOT = { enemy_occupation > 0.15 }
-		}
-	 }
+		ROOT = { is_ai = no }
 		custom_tooltip = {
-		text = "WARGOAL_ON_COOLDOWN"
-		ROOT = {
-			NOT = { has_variable = war_goal_add_cooldown }
+			text = "WAR_NOT_WELL_ENOUGH"
+			ROOT = {
+			   NOT = { enemy_occupation > 0.15 }
+			}
 		}
-	 }
-
+		custom_tooltip = {
+			text = "WARGOAL_ON_COOLDOWN"
+			ROOT = {
+				NOT = { has_variable = war_goal_add_cooldown }
+			}
+		}
 		ROOT = {
 			NOT = {
 				war_participant_has_war_goal_of_type_against = {
