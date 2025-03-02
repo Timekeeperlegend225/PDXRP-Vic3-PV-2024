@@ -371,6 +371,8 @@
  gm_actions.70.a:0 "Cancel"
  gm_actions.70.b:0 "Loyalize States!"
  gm_actions.70.c:0 "Radicalize States!"
+ gm_actions.70.d:0 "Loyalize Country"
+ gm_actions.70.e:0 "Radicalize Country"
  
  gm_actions.83.t:0 "Movement interaction"
  gm_actions.83.a:0 "Cancel"
