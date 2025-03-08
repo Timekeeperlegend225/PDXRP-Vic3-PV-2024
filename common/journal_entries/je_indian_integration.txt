@@ -9,6 +9,9 @@
 		NOT = {
 			c:LOB ?= THIS
 		}
+		NOT = {
+			c:YUA ?= THIS
+		}
 	}
 	scripted_button = je_ind_rem_but
 	possible = {
@@ -111,6 +114,11 @@ je_int_newsouth = {
 			owns_entire_state_region = STATE_MISSISSIPPI
 			owns_entire_state_region = STATE_TENNESSEE
 			owns_entire_state_region = STATE_GEORGIA
+		}
+	}
+	fail = {
+		NOT = {
+			has_variable = variable_indi_app
 		}
 	}
 	complete = {
@@ -377,6 +385,11 @@ je_int_grebas = {
 		owns_entire_state_region = STATE_NEVADA
 		owns_entire_state_region = STATE_UTAH
 		owns_entire_state_region = STATE_COLORADO
+		}
+	}
+	fail = {
+		NOT = {
+			has_variable = variable_indi_app
 		}
 	}
 	complete = {
