@@ -30,17 +30,20 @@ demand_conquest = {
 		  NOT = { enemy_occupation > 0.15 }
 		}
 	 }
-	custom_tooltip = {
-		text = "WARGOAL_ON_COOLDOWN"
-		ROOT = {
-			NOT = { has_variable = war_goal_add_cooldown }
-		}
-	 }
+#	custom_tooltip = {
+#		text = "WARGOAL_ON_COOLDOWN"
+#		ROOT = {
+#			NOT = { has_variable = war_goal_add_cooldown }
+#		}
+#	 }
 	}
 
 	second_state_trigger = {
 		owner = scope:target_country
 		is_under_colonization = no
+		NOT = {
+			has_claim_by = scope:country 
+		}
 		NOT = { is_target_of_wargoal = scope:target_country }
 	}
 	
@@ -48,23 +51,38 @@ demand_conquest = {
 		ROOT = {
 			set_variable = {
 				name = war_goal_add_cooldown
-				months = 12
+				months = 15
 			}
 		}
 		if = {
 			limit = { exists = scope:second_state }	
-			random_diplomatic_play = { 
-			limit = { is_war = yes any_scope_play_involved = { THIS = scope:target_country } }
-			add_war_goal = { holder = root type = conquer_state target_state = scope:second_state primary_demand = no target_country = scope:target_country }
+				every_diplomatic_play = { 
+				limit = { 
+					is_war = yes 
+					any_scope_play_involved = { 
+						THIS = scope:target_country 
+					}
+					any_scope_play_involved = { 
+						THIS = root
+					} 
+				}
+				add_war_goal = { 
+					holder = root 
+					type = conquer_state 
+					target_state = scope:second_state 
+					primary_demand = no 
+					target_country = scope:target_country 
+					save_scope_as = wargoal
+				}
 			}
 
 			create_incident = {
 				country = root
 				value = {
 					value = "scope:second_state.ai_state_value(scope:target_country)"
-					divide = 8
+					divide = 15
 					max = 50
-					min = 10						
+					min = 10
 				}
 			}		
 		}
@@ -164,21 +182,24 @@ demand_return_claim = {
 		custom_tooltip = {
 			text = "WAR_NOT_WELL_ENOUGH"
 			ROOT = {
-			  NOT = { enemy_occupation > 0.15 }
+				NOT = { enemy_occupation > 0.15 }
 			}
 		}
-		custom_tooltip = {
-			text = "WARGOAL_ON_COOLDOWN"
-			ROOT = {
-				NOT = { has_variable = war_goal_add_cooldown }
-			}
-		}
-	}
+#		custom_tooltip = {
+#			text = "WARGOAL_ON_COOLDOWN"
+#			ROOT = {
+#				NOT = { has_variable = war_goal_add_cooldown }
+#			}
+#		}
+	}	
 
 	second_state_trigger = {
 		owner = scope:target_country
-		any_country = { limit = { is_at_war = yes } has_claim = root }
-		NOT = { is_target_of_wargoal = scope:target_country }
+		has_claim_by = scope:country 
+		is_under_colonization = no
+		NOT = { 
+			is_target_of_wargoal = scope:target_country 
+		}
 	}
 	
 	accept_effect = {
@@ -190,18 +211,32 @@ demand_return_claim = {
 		}
 		if = {
 			limit = { exists = scope:second_state }	
-			random_diplomatic_play = { 
-			limit = { is_war = yes any_scope_play_involved = { THIS = scope:target_country } }
-			add_war_goal = { holder = root type = return_state target_state = scope:second_state primary_demand = no target_country = scope:target_country }
+			every_diplomatic_play = { 
+				limit = { 
+					is_war = yes 
+					any_scope_play_involved = { 
+						THIS = scope:target_country 
+					} 
+					any_scope_play_involved = { 
+						THIS = root
+					} 
+				}
+				add_war_goal = { 
+					holder = root 
+					type = return_state 
+					target_state = scope:second_state 
+					primary_demand = no 
+					target_country = scope:target_country 
+				}
 			}
 
 			create_incident = {
 				country = root
 				value = {
 					value = "scope:second_state.ai_state_value(scope:target_country)"
-					divide = 12
+					divide = 30
 					max = 38
-					min = 10						
+					min = 5						
 				}
 			}		
 		}
@@ -330,16 +365,24 @@ demand_treaty_port = {
 		}
 		if = {
 			limit = { exists = scope:second_state }	
-			random_diplomatic_play = { 
-			limit = { is_war = yes any_scope_play_involved = { THIS = scope:target_country } }
-			add_war_goal = { holder = root type = take_treaty_port target_state = scope:second_state primary_demand = no target_country = scope:target_country }
+			every_diplomatic_play = { 
+				limit = { 
+					is_war = yes 
+					any_scope_play_involved = { 
+						THIS = scope:target_country 
+					} 
+					any_scope_play_involved = { 
+						THIS = root
+					}
+				}
+				add_war_goal = { holder = root type = take_treaty_port target_state = scope:second_state primary_demand = no target_country = scope:target_country }
 			}
 
 			create_incident = {
 				country = root
 				value = {
 					value = "scope:second_state.ai_state_value(scope:target_country)"
-					divide = 8
+					divide = 30
 					max = 50
 					min = 10						
 				}
@@ -466,14 +509,22 @@ demand_war_reps = {
 				months = 12
 			}
 		}
-		random_diplomatic_play = { 
-		limit = { is_war = yes any_scope_play_involved = { THIS = scope:target_country } }
-		add_war_goal = { holder = root type = war_reparations primary_demand = yes target_country = scope:target_country }
+		every_diplomatic_play = { 
+			limit = {
+				is_war = yes 
+				any_scope_play_involved = { 
+					THIS = scope:target_country 
+				} 
+				any_scope_play_involved = { 
+					THIS = root
+				}
+			}
+			add_war_goal = { holder = root type = war_reparations primary_demand = yes target_country = scope:target_country }
 		}
 			create_incident = {
 				country = root
 				value = {
-					value = 10
+					value = 5
 					divide = 1
 					max = 10
 					min = 5						
@@ -571,14 +622,22 @@ demand_ban_slavery = {
 				months = 12
 			}
 		}
-		random_diplomatic_play = { 
-		limit = { is_war = yes any_scope_play_involved = { THIS = scope:target_country } }
+		every_diplomatic_play = { 
+			limit = { 
+				is_war = yes 
+				any_scope_play_involved = { 
+					THIS = scope:target_country 
+				} 
+				any_scope_play_involved = { 
+					THIS = root
+				}
+			}
 		add_war_goal = { holder = root type = ban_slavery primary_demand = no target_country = scope:target_country }
 		}
 			create_incident = {
 				country = root
 				value = {
-					value = 9
+					value = 5
 					divide = 1
 					max = 12
 					min = 5						
@@ -687,9 +746,17 @@ demand_iraqi_freedom = {
 				months = 12
 			}
 		}
-		random_diplomatic_play = { 
-		limit = { is_war = yes any_scope_play_involved = { THIS = scope:target_country } }
-		add_war_goal = { holder = root type = regime_change primary_demand = no target_country = scope:target_country }
+		every_diplomatic_play = { 
+			limit = { 
+				is_war = yes 
+				any_scope_play_involved = { 
+					THIS = scope:target_country 
+				}
+				any_scope_play_involved = { 
+					THIS = root
+				}
+			}
+			add_war_goal = { holder = root type = regime_change primary_demand = no target_country = scope:target_country }
 		}
 			create_incident = {
 				country = root
@@ -804,8 +871,16 @@ demand_containment = {
 				months = 12
 			}
 		}
-		random_diplomatic_play = { 
-		limit = { is_war = yes any_scope_play_involved = { THIS = scope:target_country } }
+		every_diplomatic_play = { 
+			limit = { 
+				is_war = yes 
+				any_scope_play_involved = { 
+					THIS = scope:target_country 
+				}
+				any_scope_play_involved = { 
+					THIS = root
+				} 
+			}
 		add_war_goal = { holder = root type = contain_threat primary_demand = no target_country = scope:target_country }
 		}
 			create_incident = {
@@ -911,9 +986,15 @@ demand_standard_oil = {
 				months = 12
 			}
 		}
-		random_diplomatic_play = { 
-		limit = { is_war = yes any_scope_play_involved = { THIS = scope:target_country } }
-		add_war_goal = { holder = root type = foreign_investment_rights primary_demand = no target_country = scope:target_country }
+		every_diplomatic_play = { 
+			limit = { 
+				is_war = yes 
+				any_scope_play_involved = { THIS = scope:target_country } 
+				any_scope_play_involved = { 
+					THIS = root
+				}
+			}
+			add_war_goal = { holder = root type = foreign_investment_rights primary_demand = no target_country = scope:target_country }
 		}
 			create_incident = {
 				country = root
@@ -1018,14 +1099,22 @@ demand_humiliation = {
 				months = 12
 			}
 		}
-	random_diplomatic_play = { 
-		limit = { is_war = yes any_scope_play_involved = { THIS = scope:target_country } }
-		add_war_goal = { holder = root type = humiliation primary_demand = no target_country = scope:target_country }
+	every_diplomatic_play = { 
+		limit = { 
+			is_war = yes 
+			any_scope_play_involved = { 
+				THIS = scope:target_country 
+			} 
+			any_scope_play_involved = { 
+				THIS = root
+			}
 		}
+		add_war_goal = { holder = root type = humiliation primary_demand = no target_country = scope:target_country }
+	}
 			create_incident = {
 				country = root
 				value = {
-					value = 16
+					value = 5
 					divide = 1
 					max = 18
 					min = 4	
@@ -1129,9 +1218,21 @@ demand_dominion = {
 				months = 12
 			}
 		}
-		random_diplomatic_play = { 
-		limit = { is_war = yes any_scope_play_involved = { THIS = scope:target_country } }
-		add_war_goal = { holder = root type = make_dominion primary_demand = no target_country = scope:target_country }
+		every_diplomatic_play = { 
+			limit = { 
+				is_war = yes 
+				any_scope_play_involved = { 
+					THIS = scope:target_country } 
+				}
+				any_scope_play_involved = { 
+					THIS = root
+				}
+			add_war_goal = {
+				holder = root 
+				type = make_dominion 
+				primary_demand = no 
+				target_country = scope:target_country 
+			}
 		}
 			create_incident = {
 				country = root
@@ -1238,9 +1339,17 @@ demand_protectorate2 = {
 				months = 12
 			}
 		}
-		random_diplomatic_play = { 
-		limit = { is_war = yes any_scope_play_involved = { THIS = scope:target_country } }
-		add_war_goal = { holder = root type = make_protectorate primary_demand = no target_country = scope:target_country }
+		every_diplomatic_play = { 
+			limit = { 
+				is_war = yes 
+				any_scope_play_involved = { 
+					THIS = scope:target_country 
+				} 
+				any_scope_play_involved = { 
+					THIS = root
+				}
+			}
+			add_war_goal = { holder = root type = make_protectorate primary_demand = no target_country = scope:target_country }
 		}
 			create_incident = {
 				country = root
@@ -1342,15 +1451,23 @@ demand_transfer_subject = {
 	}
 	
 	accept_effect = {
-	ROOT = {
-			set_variable = {
-				name = war_goal_add_cooldown
-				months = 12
+		ROOT = {
+				set_variable = {
+					name = war_goal_add_cooldown
+					months = 12
+				}
 			}
-		}
-	random_diplomatic_play = { 
-		limit = { is_war = yes any_scope_play_involved = { THIS = scope:target_country } }
-		add_war_goal = { holder = root type = transfer_subject primary_demand = no target_country = scope:target_country }
+		every_diplomatic_play = {
+			limit = { 
+				is_war = yes 
+				any_scope_play_involved = { 
+					THIS = scope:target_country 
+				} 
+				any_scope_play_involved = { 
+					THIS = root
+				}
+			}
+			add_war_goal = { holder = root type = transfer_subject primary_demand = no target_country = scope:target_country }
 		}
 			create_incident = {
 				country = root
@@ -1458,9 +1575,17 @@ demand_liberate_subject = {
 				months = 12
 			}
 		}
-		random_diplomatic_play = { 
-		limit = { is_war = yes any_scope_play_involved = { THIS = scope:target_country } }
-		add_war_goal = { holder = root type = liberate_subject primary_demand = no target_country = scope:target_country }
+		every_diplomatic_play = {
+			limit = { 
+				is_war = yes 
+				any_scope_play_involved = { 
+					THIS = scope:target_country 
+				} 
+				any_scope_play_involved = { 
+					THIS = root
+				}
+			}
+			add_war_goal = { holder = root type = liberate_subject primary_demand = no target_country = scope:target_country }
 		}
 			create_incident = {
 				country = root
