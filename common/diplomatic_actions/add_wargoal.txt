@@ -30,12 +30,12 @@ demand_conquest = {
 		  NOT = { enemy_occupation > 0.15 }
 		}
 	 }
-#	custom_tooltip = {
-#		text = "WARGOAL_ON_COOLDOWN"
-#		ROOT = {
-#			NOT = { has_variable = war_goal_add_cooldown }
-#		}
-#	 }
+	custom_tooltip = {
+		text = "WARGOAL_ON_COOLDOWN"
+		ROOT = {
+			NOT = { has_variable = war_goal_add_cooldown }
+		}
+	 }
 	}
 
 	second_state_trigger = {
@@ -185,12 +185,12 @@ demand_return_claim = {
 				NOT = { enemy_occupation > 0.15 }
 			}
 		}
-#		custom_tooltip = {
-#			text = "WARGOAL_ON_COOLDOWN"
-#			ROOT = {
-#				NOT = { has_variable = war_goal_add_cooldown }
-#			}
-#		}
+		custom_tooltip = {
+			text = "WARGOAL_ON_COOLDOWN"
+			ROOT = {
+				NOT = { has_variable = war_goal_add_cooldown }
+			}
+		}
 	}	
 
 	second_state_trigger = {
@@ -235,7 +235,7 @@ demand_return_claim = {
 				value = {
 					value = "scope:second_state.ai_state_value(scope:target_country)"
 					divide = 30
-					max = 38
+					max = 40
 					min = 5						
 				}
 			}		
