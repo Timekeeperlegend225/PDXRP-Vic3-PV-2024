@@ -34,12 +34,14 @@
 			}
 			custom_tooltip = {
 				text = "alliance_support_independence_subject"
-				NOT = {
-					any_subject_or_below = {
-						ROOT = {
-							has_diplomatic_pact = {
-								who = prev
-								type = support_independence
+				OR = {
+					NOT = {
+						any_subject_or_below = {
+							ROOT = {
+								has_diplomatic_pact = {
+									who = prev
+									type = support_independence
+								}
 							}
 						}
 					}
@@ -168,18 +170,6 @@
 					scope:target_country = { aggressive_diplomatic_plays_permitted = yes }					
 				}
 			}
-		}		
-
-		requirement_to_maintain = {
-			trigger = {
-				custom_tooltip = {
-					text = "DIPLOMATIC_PACT_REQUIREMENT_NO_SUBJECT_RELATION"
-					NOT = {
-						is_subject_of = scope:target_country
-						scope:target_country = { is_subject_of = root }
-					}				
-				}
-			}
 		}			
 
 		requirement_to_maintain = {
@@ -302,6 +292,16 @@
 				add = {
 					desc = "DIPLOMATIC_ACCEPTANCE_ISOLATIONIST"
 					add = -50
+				}
+			}			
+
+			if = {
+				limit = { 
+					root = { is_subject_of = scope:actor }
+				}
+				add = {
+					desc = "Subject"
+					add = 25
 				}
 			}			
 			

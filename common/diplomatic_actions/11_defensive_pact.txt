@@ -120,18 +120,6 @@
 		requirement_to_maintain = {
 			trigger = {
 				custom_tooltip = {
-					text = "DIPLOMATIC_PACT_REQUIREMENT_NO_SUBJECT_RELATION"
-					NOT = {
-						is_subject_of = scope:target_country
-						scope:target_country = { is_subject_of = root }
-					}				
-				}
-			}
-		}		
-
-		requirement_to_maintain = {
-			trigger = {
-				custom_tooltip = {
 					text = DIPLO_ACTION_RELATIONS_CORDIAL_OR_GREATER
 					scope:target_country.relations:root >= relations_threshold:cordial
 				}	
@@ -232,7 +220,17 @@
 					desc = "DIPLOMATIC_ACCEPTANCE_ISOLATIONIST"
 					add = -25
 				}
-			}			
+			}				
+
+			if = {
+				limit = { 
+					root = { is_subject_of = scope:actor }
+				}
+				add = {
+					desc = "Subject"
+					add = 50
+				}
+			}					
 			
 			add = {
 				desc = "DIPLOMATIC_ACCEPTANCE_ARMY_STRENGTH"
