@@ -965,9 +965,6 @@ dp_unify_japan = {
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		NOT = { exists = c:JAE }
 		NOT = { is_country_type = decentralized }
-		NOT = {
-			c:SAU ?= this
-		}
 		is_subject = no 
 		custom_tooltip = {
 			text = JAE_tt
