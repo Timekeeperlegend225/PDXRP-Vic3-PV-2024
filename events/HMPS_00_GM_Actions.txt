@@ -3375,7 +3375,7 @@ gm_actions.324 = {
 gm_actions.325 = {
 	type = country_event
 	placement = ROOT
-	title = lawgroup_policing = {
+	title = lawgroup_policing
 
 
 	event_image = {
@@ -4131,6 +4131,7 @@ gm_actions.335 = {
 		name = gm_actions.31.a
 		default_option = yes
 		remove_global_variable = GM_taking_action
+		scope:recipient = {
 			remove_variable = actionee
 		}
 	}
