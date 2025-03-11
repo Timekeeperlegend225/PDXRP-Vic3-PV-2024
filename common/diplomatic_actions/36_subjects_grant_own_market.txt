@@ -103,7 +103,7 @@
 	
 	ai = {
 		evaluation_chance = {
-			value = 1	
+			value = 0.25	
 		}		
 	
 		propose_score = {
