@@ -6,10 +6,13 @@
 		has_technology_researched = nationalism
 	}
 	when_taken = {
-		every_state_region = {
-			limit = {
-				is_homeland = cu:serb
-			}
+		s:STATE_BANAT = {
+			add_claim = c:SER
+		}
+		s:STATE_DALMATIA = {
+			add_claim = c:SER
+		}
+		s:STATE_DELVIDEK = {
 			add_claim = c:SER
 		}
 		change_infamy = 20
