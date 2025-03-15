@@ -1,0 +1,20 @@
+﻿serbian_claims_decision = {
+	is_shown = {
+		THIS = c:SER
+	}
+	possible = {
+		has_technology_researched = nationalism
+	}
+	when_taken = {
+		every_state_region = {
+			limit = {
+				is_homeland = cu:serb
+			}
+			add_claim = c:SER
+		}
+		change_infamy = 20
+	}
+	ai_chance = {
+		base = 100
+	}
+}
