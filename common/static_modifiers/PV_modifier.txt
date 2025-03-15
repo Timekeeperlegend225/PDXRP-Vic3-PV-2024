@@ -1,0 +1,4 @@
+PV_romanticism_mod = {
+	icon = gfx/interface/icons/invention_icons/romanticism.dds
+	country_prestige_add = 25
+}
