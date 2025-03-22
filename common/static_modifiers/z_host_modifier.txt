@@ -542,3 +542,47 @@ balance_modifier_mod = {
 target_character_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 }
+
+broken_treaty_small_mod = {
+	icon = gfx/interface/icons/infamy_icons/infamous.dds
+	country_prestige_mult = -0.05
+	country_influence_mult = -0.10
+}
+
+broken_treaty_medium_mod = {
+	icon = gfx/interface/icons/infamy_icons/notorious.dds
+	country_prestige_mult = -0.10
+	country_influence_mult = -0.20
+}
+
+broken_treaty_large_mod = {
+	icon = gfx/interface/icons/infamy_icons/pariah.dds
+	country_prestige_mult = -0.25
+	country_influence_mult = -0.25
+}
+
+broken_rule_small_mod = {
+	icon = gfx/interface/icons/infamy_icons/infamous.dds
+	country_authority_mult = -0.05
+	country_influence_mult = -0.05
+	country_loan_interest_rate_mult = 0.10
+}
+
+broken_rule_medium_mod = {
+	icon = gfx/interface/icons/infamy_icons/notorious.dds
+	country_authority_mult = -0.10
+	country_influence_mult = -0.10
+	country_loan_interest_rate_mult = 0.15
+	country_law_enactment_stall_mult = 0.10
+	building_throughput_add = -0.07
+}
+
+broken_rule_large_mod = {
+	icon = gfx/interface/icons/infamy_icons/pariah.dds
+	country_authority_mult = -0.20
+	country_influence_mult = -0.20
+	country_loan_interest_rate_mult = 0.20
+	country_law_enactment_stall_mult = 0.20
+	building_throughput_add = -0.15
+	country_infamy_generation_mult = 0.25
+}
