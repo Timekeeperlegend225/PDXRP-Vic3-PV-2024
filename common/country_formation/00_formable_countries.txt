@@ -563,7 +563,7 @@ RUH = {
 	required_states_fraction = 0.8
 
 	possible = {
-		has_technology_researched = pan-nationalism
+		has_technology_researched = nationalism
 		}
 	
 	ai_will_do = { always = yes }
