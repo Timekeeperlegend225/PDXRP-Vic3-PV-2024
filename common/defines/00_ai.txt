@@ -1025,8 +1025,8 @@
 	POWER_BLOC_PRINCIPLE_RANDOM_FACTOR = 1				# The higher this is, the more random AI selection of power bloc principles will be
 	POWER_BLOC_STATUE_RANDOM_FACTOR = 1					# The higher this is, the more random AI selection of power bloc statues will be
 
-	LEAVE_POWER_BLOC_SCORE_THRESHOLD = -100 				# Leave the power bloc if score is less than this. Score is the acceptance value for 'invite_to_power_bloc' diplomatic action
-	POWER_BLOC_KICK_MEMBER_LOW_COHESION_THRESHOLD = 40					# If current cohesion is less than this consider it low and add the corresponding score
+	LEAVE_POWER_BLOC_SCORE_THRESHOLD = -500 				# Leave the power bloc if score is less than this. Score is the acceptance value for 'invite_to_power_bloc' diplomatic action
+	POWER_BLOC_KICK_MEMBER_LOW_COHESION_THRESHOLD = 10					# If current cohesion is less than this consider it low and add the corresponding score
 	POWER_BLOC_KICK_MEMBER_LOW_COHESION_SCORE = 5						# Score to kick a member (which is anyone) if current cohesion is low (multiplied by delta between cohesion and threshold)
 	POWER_BLOC_KICK_MEMBER_COHESION_CHANGE_SCORE = 2					# Score to kick the member if cohesion change is high enough (multiplied by cohesion chance)
 	POWER_BLOC_KICK_MEMBER_LEVERAGE_ADVANTAGE_SCORE = -0.1			# Score to kick the member if active leverage on them is high enough (multiplied by active leverage)
@@ -1035,10 +1035,10 @@
 	POWER_BLOC_KICK_MEMBER_MARKET_SHARE_SCORE = -50					# Score to kick the member based on their market share in the bloc (if PB has a unified market)
 	POWER_BLOC_KICK_MEMBER_HIGH_ARMY_MILITARY_STRENGTH_SCORE = -25		# Score to kick the member if their army strength is above average (if PB is a military alliance)
 	POWER_BLOC_KICK_MEMBER_HIGH_NAVY_MILITARY_STRENGTH_SCORE = -15		# Score to kick the member if their navy strength is above average (if PB is a military alliance)
-	POWER_BLOC_KICK_MEMBER_SCORE_THRESHOLD = 100						# Kick the member if the total score is less than this
-	POWER_BLOC_KICK_MEMBER_RANDOM_FACTOR = 0.5							# The higher this is, the more random AI will be about which member to kick from the power bloc
+	POWER_BLOC_KICK_MEMBER_SCORE_THRESHOLD = -100						# Kick the member if the total score is less than this
+	POWER_BLOC_KICK_MEMBER_RANDOM_FACTOR = 0.1							# The higher this is, the more random AI will be about which member to kick from the power bloc
 
-	IMPOSE_LAW_NO_POTENTIAL_LAW_COOLDOWN_MONTHS = 24					# If the AI doesn't find any law with at least a chance to be imposed on a target, don't check them again for this number of months
+	IMPOSE_LAW_NO_POTENTIAL_LAW_COOLDOWN_MONTHS = 12					# If the AI doesn't find any law with at least a chance to be imposed on a target, don't check them again for this number of months
 	IMPOSE_LAW_RANDOM_FACTOR = 1 										# The higher this is, the more random the AI is about which country to try and impose a law on
 	IMPOSE_LAW_MAX_IDEOLOGICAL_OPINION = 25								# The AI's ideological opinion of a country must be this or below to consider imposing a law on them 		
 	IMPOSE_LAW_MAX_LIBERTY_DESIRE = 50									# The AI will not impose laws on subjects with LD higher than this

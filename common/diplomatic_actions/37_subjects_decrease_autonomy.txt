@@ -48,6 +48,15 @@
 				}
 			}
 		}
+		
+		NAND = {
+			scope:target_country = {
+				is_player = yes
+			}
+			root = {
+				is_ai = yes
+			}
+		}	
 	}
 
 	accept_effect = {
