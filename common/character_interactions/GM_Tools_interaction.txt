@@ -21,6 +21,10 @@
 		} 
 		add_modifier = target_character_mod
 	}
+	
+	ai_chance = {
+		value = 0
+	}
 }
 
 GM_grant_leadership = {
@@ -49,6 +53,10 @@ GM_grant_leadership = {
 		add_character_role = politician
 		set_as_interest_group_leader = yes
 	}
+	
+	ai_chance = {
+		value = 0
+	}
 }
 
 GM_grant_rulership = {
@@ -76,6 +84,10 @@ GM_grant_rulership = {
 		remove_character_role = agitator
 		add_character_role = politician
 		set_character_as_ruler = yes
+	}
+	
+	ai_chance = {
+		value = 0
 	}
 }
 
@@ -106,6 +118,10 @@ GM_set_as_heir = {
 		remove_character_role = agitator
 		add_character_role = politician
 	}
+	
+	ai_chance = {
+		value = 0
+	}
 }
 
 
@@ -131,5 +147,9 @@ GM_send_back_as_agitator = {
 			save_scope_as = owner_scope 
 		}
 		transfer_character = scope:owner_scope
+	}
+	
+	ai_chance = {
+		value = 0
 	}
 }
