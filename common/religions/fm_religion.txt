@@ -141,7 +141,7 @@ atheist = {
 baal = {
 	texture = "gfx/interface/icons/religion_icons/tanit.dds"
 	traits = {
-		baal_pol
+		christian
 	}
 	color = {68 242 236}
 }
