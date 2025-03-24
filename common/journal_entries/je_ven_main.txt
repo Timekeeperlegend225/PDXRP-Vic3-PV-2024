@@ -21,7 +21,7 @@
 		value = var:fm_venice_var
 	}
 	goal_add_value = {
-		add = 6
+		add = 5
 	}
 	progressbar = yes
 	weight = 10000
@@ -143,8 +143,10 @@ je_venice_east = {
 	complete = {
 		sr:region_japan = {
 			any_scope_state = {
-				is_treaty_port = yes
-				owner = c:VEN
+				OR = {
+					is_treaty_port = yes
+					owner = c:VEN
+				}
 			}
 		}
 		OR = {
@@ -223,8 +225,10 @@ je_venice_mediterranean = {
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	group = je_group_historical_content
 	complete = {
-		owns_treaty_port_in = STATE_GRANADA
-		has_building = building_suez_canal
+		OR = {
+			owns_treaty_port_in = STATE_GRANADA
+			has_building = building_suez_canal
+		}
 	}
 	on_complete = {
 		custom_tooltip = je_venice_advance
@@ -249,10 +253,8 @@ je_venice_mediterranean_r = {
 	group = je_group_historical_content
 	fail = {
 		NOT = {
-			AND = {
 				owns_treaty_port_in = STATE_GRANADA
 				has_building = building_suez_canal
-			}
 		}
 	}
 	on_fail = {
