@@ -24,7 +24,25 @@ NEconomy = {
 	TRADE_CENTER_MARKET_CAPITAL_FACTOR = 5 	# When deciding trade center for a trade route, increase score by this for the market capital in the market
 	TRADE_CENTER_PORT_LEVEL_FACTOR = 1 	# When deciding trade center for a trade route, multiply port level by this and add to the score
 	TRADE_CENTER_EXISTING_TRADE_ROUTES_FACTOR = -1  # When deciding trade center for a trade route, multiply the number of trade routes already associated with the state by this score
+	
+	COMPANY_OVER_LIMIT_BONUS_PENALTY_MIN = 0.33			# If the number of companies in the country exceeds the limit, all company bonuses get penalty. The penalty is scaled proportionally to the limit (exceeding the limit by 100% reduces bonuses by 100%) and the minimum value is this
+	COMPANY_PRODUCTIVITY_RATIO_HIGH_THRESHOLD = 1.1		# Companies whose productivity exceeds this factor of the global average will be considered high-productivity companies
+	COMPANY_PRODUCTIVITY_RATIO_LOW_THRESHOLD = 0.65		# Companies whose productivity is below this factor of the global average will be considered low-productivity companies
+	COMPANY_PRODUCTIVITY_ABSOLUTE_HIGH_THRESHOLD = 15	# Companies whose productivity exceeds this amount will ALWAYS be considered high-productivity companies
+	COMPANY_PRODUCTIVITY_ABSOLUTE_LOW_THRESHOLD = 5		# Companies whose productivity is below this amount will ALWAYS be considered low-productivity companies
+	COMPANY_PROSPERITY_MAX = 200						# Company prosperity cannot be higher than this
+	COMPANY_PROSPERITY_BONUS_THRESHOLD = 100			# At this amount of prosperity, a company will start providing its prosperity bonus modifier
+	COMPANY_PROSPERITY_WEEKLY_INCREASE = 5				# High-productivity companies have their prosperity increase by this amount per week
+	COMPANY_PROSPERITY_WEEKLY_DECREASE = 2				# Low-productivity companies have their prosperity increase by this amount per week
+	NATIONALIZATION_PER_LEVEL_COST = 500				# How much it costs to nationalize one level of a building per construction point
+	PRIVATIZATION_PER_LEVEL_COST = 250					# How much it costs to privatize one level of a building per construction point
+	MIN_FAKE_CONSTRUCTION_COST = 150					# Min construction cost for the matters of nationalization and privatization
 
+	COMPANY_INITIAL_LEVELS = 3							# How many levels of ownership in other buildings required to establish a company
+	COMPANY_ON_ESTABLISH_COOLDOWN_MONTHS = 60			# Cooldown in months after establishing a company before you can disband it
+	COMPANY_ON_DISBAND_COOLDOWN_MONTHS = 48				# Cooldown in months after disbanding a company before you can re-establish it
+	COMPANY_MIN_LEVELS_OWNED = 3						# Min amount of ownerships that company can have, more can't be nationalized or privatized
+	
 	COUNTRY_GDP_MODIFIER_MAX_MULTIPLIER = 300000
 }
 NDiplomacy = {
@@ -39,12 +57,12 @@ NDiplomacy = {
 	INFAMY_THRESHOLD_PARIAH = 125			# Above this, countries are considered pariah and get related penalties
 	BASE_YEARLY_INFAMY_DECAY_RATE = 10
 	WAR_GOAL_INFAMY_POPULATION_SCALING_FACTOR = 8000
-	WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER_MAX_PER_STATE = 11
-	WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER_MAX_TOTAL = 50 # Infamy population multiplier can't be higher than this, regardless of number of states affected
+	WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER_MAX_PER_STATE = 6
+	WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER_MAX_TOTAL = 40 # Infamy population multiplier can't be higher than this, regardless of number of states affected
 	WAR_GOAL_INFAMY_DIPLO_PLAY_BACK_DOWN_REFUND = -1.00
 	WAR_GOAL_INFAMY_MAKE_PROTECTORATE = 2.5
 	WAR_GOAL_INFAMY_CONQUER_STATE = 3.5
-	WAR_GOAL_INFAMY_RETURN_STATE = 1.5
+	WAR_GOAL_INFAMY_RETURN_STATE = 2
 }
 NWar = {
 	DEVASTATION_MAX = 100.0
