@@ -442,7 +442,8 @@
  gm_actions.91.g:0 "Remove Alliance"
  gm_actions.91.h:0 "Add Garantee"
  gm_actions.91.i:0 "Remove Garantee"
- gm_actions.91.j:0 "Annex"
+ gm_actions.91.j:0 "Add War Reparation"
+ gm_actions.91.k:0 "Remove War Reparation"
  
  gm_actions.910.t:0 "Annex, WARNING ! It's hardly reversible"
  gm_actions.910.a:0 "Cancel"
