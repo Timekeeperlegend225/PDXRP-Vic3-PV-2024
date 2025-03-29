@@ -1,0 +1,40 @@
+﻿pm_canal = {
+	texture = "gfx/interface/icons/production_method_icons/canals.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 100
+			country_minting_add = 2000
+		}
+		level_scaled = {
+			country_max_companies_add = 1
+		}
+	}
+
+	state_modifiers = {
+		level_scaled = {
+			state_migration_pull_mult = 0.5
+		}
+		
+		workforce_scaled = {
+			state_infrastructure_add = 50
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 25
+			goods_input_coal_add = 25
+			goods_output_gold_add = 50
+			goods_output_transportation_add = 50
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = 500
+			building_employment_machinists_add = 900
+			building_employment_laborers_add = 1500
+			building_employment_bureaucrats_add = 100
+		}
+	}
+}
