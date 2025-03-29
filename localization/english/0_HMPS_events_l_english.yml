@@ -470,7 +470,7 @@
  gm_actions.92.q:0 "Add Personnal Union"
  gm_actions.92.r:0 "Remove Personnal Union"
  
- gm_actions.100.t:0 "Special Event Menu"
+ gm_actions.100.t:0 "Modifiers Menu"
  gm_actions.100.a:0 "Cancel"
  gm_actions.100.b:0 "Remove Bankrucy"
  gm_actions.100.c:0 "Austria Modifier"
@@ -487,7 +487,11 @@
  gm_actions.101.b:0 "+5%"
  gm_actions.101.c:0 "+10%"
  gm_actions.101.d:0 "+25%"
- gm_actions.101.e:0 "Remove Modifiers"
+ gm_actions.101.e:0 "Remove Modifiers" 
+ 
+ gm_actions.102.t:0 "Punish"
+ gm_actions.102.a:0 "Cancel"
+ gm_actions.102.b:0 "Return"
 
  
  

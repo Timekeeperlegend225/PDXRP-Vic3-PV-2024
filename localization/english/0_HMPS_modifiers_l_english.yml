@@ -136,3 +136,5 @@
  broken_rule_small_mod:0 "Broke a small rule"
  broken_rule_medium_mod:0 "Broke a medium rule"
  broken_rule_large_mod:0 "Broke an important rule"
+ 
+ balance_modifier_mod:0 "Balance modifier"
