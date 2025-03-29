@@ -7808,6 +7808,52 @@ gm_actions.91 = {
 	}
 	
 	option = {
+		name = gm_actions.91.j
+		trigger = {
+			scope:recipient = {
+				NOT = {
+					has_diplomatic_pact = {
+						who = scope:scope_GM_target 
+						type = war_reparations
+					}
+				}
+			}
+		}
+		scope:recipient = {
+			create_diplomatic_pact = {
+				type = war_reparations
+				country = scope:scope_GM_target
+			}
+		}
+		scope:recipient = {
+			remove_variable = actionee
+		}
+		remove_global_variable = GM_taking_action
+	}
+	
+	option = {
+		name = gm_actions.91.k
+		trigger = {
+			scope:recipient = {
+				has_diplomatic_pact = {
+					who = scope:scope_GM_target 
+					type = war_reparations
+				}
+			}
+		}
+		scope:recipient = {
+			remove_diplomatic_pact = {
+				type = war_reparations
+				country = scope:scope_GM_target
+			}  
+		}
+		scope:recipient = {
+			remove_variable = actionee
+		}
+		remove_global_variable = GM_taking_action
+	}
+	
+	option = {
 		name = gm_actions.92.t
 		trigger_event = {
 			id = gm_actions.92
@@ -7817,7 +7863,7 @@ gm_actions.91 = {
 	}
 	
 	option = {
-		name = gm_actions.91.j
+		name = gm_actions.910.t
 		trigger_event = {
 			id = gm_actions.910
 			days = 0
