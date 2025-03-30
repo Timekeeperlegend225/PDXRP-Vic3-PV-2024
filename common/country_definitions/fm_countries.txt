@@ -5484,3 +5484,14 @@ FL1 = {
 	capital = STATE_FLANDERS
 	cultures = { flemish wallonian }
 }
+
+ORA = {
+	color = { 170 70 0 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { swedish_colonial dutch_colonial }
+	capital = STATE_MASSACHUSETTS
+}
