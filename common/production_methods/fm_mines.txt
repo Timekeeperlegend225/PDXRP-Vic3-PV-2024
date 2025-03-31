@@ -5,7 +5,7 @@
     building_modifiers = {
         workforce_scaled = {
 			goods_input_tools_add = 10
-			goods_output_coal_add = 50
+			goods_output_coal_add = 25
         }
         level_scaled = {
 			building_employment_laborers_add = -1000
@@ -28,7 +28,7 @@ pm_cornish_beam_pumps_iron = {
         workforce_scaled = {
 			goods_input_tools_add = 5
 			goods_input_coal_add = 5
-			goods_output_iron_add = 35
+			goods_output_iron_add = 17
         }
         level_scaled = {
 			building_employment_laborers_add = -750
@@ -52,7 +52,7 @@ pm_pneumatic_drills_lead = {
 			goods_input_tools_add = 5
 			goods_input_coal_add = 5
 			goods_input_engines_add = 2
-			goods_output_lead_add = 45
+			goods_output_lead_add = 22
         }
         level_scaled = {
 			building_employment_laborers_add = -1000
@@ -77,7 +77,7 @@ pm_pneumatic_drills_iron = {
 			goods_input_tools_add = 10
 			goods_input_coal_add = 8
 			goods_input_engines_add = 3
-			goods_output_iron_add = 75
+			goods_output_iron_add = 37
         }
         level_scaled = {
 			building_employment_laborers_add = -600
@@ -100,7 +100,7 @@ pm_flotation_sulfur = {
         workforce_scaled = {
 			goods_input_tools_add = 10
 			goods_input_oil_add = 3
-			goods_output_sulfur_add = 75
+			goods_output_sulfur_add = 37
         }
         level_scaled = {
 			building_employment_laborers_add = -1000
@@ -123,7 +123,7 @@ pm_flotation_lead = {
         workforce_scaled = {
 			goods_input_tools_add = 10
 			goods_input_oil_add = 3
-			goods_output_lead_add = 75
+			goods_output_lead_add = 37
         }
         level_scaled = {
 			building_employment_laborers_add = -1000

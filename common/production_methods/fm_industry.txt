@@ -60,7 +60,7 @@ pm_roller_mill_processing = {
 		workforce_scaled = {  
             goods_input_grain_add = -10
             goods_input_tools_add = 5
-            goods_output_groceries_add = 30
+            goods_output_groceries_add = 15
 		}  
 		level_scaled = {  
             building_employment_laborers_add = -1000
@@ -78,7 +78,7 @@ pm_pasteurized_dairy_integration = {
             goods_input_grain_add = -15
             goods_input_glass_add = 10
             goods_input_coal_add = 5
-            goods_output_groceries_add = 50
+            goods_output_groceries_add = 25
 		}  
 		level_scaled = {  
             building_employment_engineers_add = 50
@@ -95,7 +95,7 @@ pm_chemical_preservation = {
             goods_input_grain_add = -20
             goods_input_fertilizer_add = 5
             goods_input_oil_add = 1
-            goods_output_groceries_add = 80
+            goods_output_groceries_add = 40
 		}  
 		level_scaled = {  
             building_employment_laborers_add = 100
@@ -114,7 +114,7 @@ pm_electric_conveyor_systems = {
             goods_input_electricity_add = 10
             goods_input_steel_add = 5
             goods_input_paper_add = 5
-            goods_output_groceries_add = 120
+            goods_output_groceries_add = 60
 		}  
 		level_scaled = {  
             building_employment_laborers_add = -2500
@@ -132,7 +132,7 @@ pm_hydraulic_flume_transport = {
         workforce_scaled = {
 			goods_input_fabric_add = 3
 			goods_input_tools_add = 2
-			goods_output_wood_add = 50
+			goods_output_wood_add = 25
         }
         level_scaled = {
 			building_employment_laborers_add = -1000
@@ -155,7 +155,7 @@ pm_band_saw_mills = {
         workforce_scaled = {
 			goods_input_tools_add = 5
 			goods_input_engines_add = 2
-			goods_output_wood_add = 90
+			goods_output_wood_add = 45
 			goods_output_hardwood_add = 10
         }
         level_scaled = {
@@ -173,7 +173,7 @@ pm_creosote_treatment = {
         workforce_scaled = {
 			goods_input_fertilizer_add = 4
 			goods_input_oil_add = 1
-			goods_output_wood_add = 70
+			goods_output_wood_add = 35
 			goods_output_hardwood_add = 15
         }
         level_scaled = {
@@ -200,7 +200,7 @@ pm_portable_sawmill_operations = {
         workforce_scaled = {
 			goods_input_oil_add = 1
 			goods_input_engines_add = 3
-			goods_output_wood_add = 120
+			goods_output_wood_add = 60
         }
         level_scaled = {
 			building_employment_laborers_add = -1500
@@ -217,7 +217,7 @@ pm_coal_dye_application = {
         workforce_scaled = {
             goods_input_dye_add = -5          # Reduce natural dye
             goods_input_coal_add = 5          # New input from Mining
-            goods_output_clothes_add = 30      # +30 base clothes
+            goods_output_clothes_add = 15      # +30 base clothes
 
             state_pollution_generation_add = 5  # Chemical runoff
         }
@@ -232,7 +232,7 @@ pm_paper_templates = {
         workforce_scaled = {
             goods_input_paper_add = 10         # From Paper Mills
             goods_input_tools_add = 3       # Precision cutting
-            goods_output_clothes_add = 60      # +50 base clothes
+            goods_output_clothes_add = 30      # +50 base clothes
         }
         level_scaled = {
             building_employment_clerks_add = 300  # Pattern management
@@ -249,8 +249,8 @@ pm_rubberized_clothing = {
         workforce_scaled = {
             goods_input_rubber_add = 5        # From Plantations/Explosives
             goods_input_sulfur_add = 5         # From Mining
-            goods_output_luxury_clothes_add = 50 
-            goods_output_clothes_add = -20     # Shift to premium
+            goods_output_luxury_clothes_add = 25 
+            goods_output_clothes_add = -10     # Shift to premium
         }
         level_scaled = {
             military_formation_mobilization_speed_mult = 0.1 # Elastic in uniforms
@@ -266,11 +266,11 @@ pm_dust_prevention_systems = {
         workforce_scaled = {
             goods_input_glass_add = 5         # From Glassworks
             goods_input_electricity_add = 10   
-            goods_output_clothes_add = 100    
-            goods_output_luxury_clothes_add = 30
+            goods_output_clothes_add = 50    
+            goods_output_luxury_clothes_add = 15
         }
         level_scaled = {
-            building_laborers_mortality_mult = -0.2 # Safer mills
+            building_laborers_mortality_mult = -0.002 # Safer mills
             building_employment_engineers_add = 100
         }
     }
@@ -287,8 +287,8 @@ pm_industrial_fish_cannery = {
             goods_input_steel_add = 1  #(for tin cans)  
             goods_input_glass_add = 2   #(for jarred preserves)  
             # Outputs  
-            goods_output_fish_add = 50  #(preserved fish) 
-            goods_output_groceries_add = 15  #(canned fish as a new food product)  
+            goods_output_fish_add = 25  #(preserved fish) 
+            goods_output_groceries_add = 7  #(canned fish as a new food product)  
 
         }
         level_scaled = {
@@ -311,8 +311,8 @@ pm_fishmeal_rendering = {
     building_modifiers = {
         workforce_scaled = {
             goods_input_sulfur_add = 3  #(for preservatives)  
-            goods_output_fish_add = -10  #(reduced fresh fish)  
-            goods_output_fertilizer_add = 35  #(fishmeal fertilizer)  
+            goods_output_fish_add = -5  #(reduced fresh fish)  
+            goods_output_fertilizer_add = 17  #(fishmeal fertilizer)  
         }
         level_scaled = {
             building_employment_engineers_add = 50   
@@ -328,7 +328,7 @@ pm_echo_sounding_trawlers = {
         workforce_scaled = {
             goods_input_electricity_add = 3
             goods_input_engines_add = 2 
-            goods_output_fish_add = 100  #(massive boost from precision fishing)  
+            goods_output_fish_add = 50  #(massive boost from precision fishing)  
         }
         level_scaled = {
             building_employment_engineers_add = 150  
@@ -354,7 +354,7 @@ pm_steam_bent_furniture = {
             goods_input_wood_add = -10
             goods_input_coal_add = 5
 
-            goods_output_furniture_add = 40
+            goods_output_furniture_add = 20
 
             
         }
@@ -389,8 +389,8 @@ pm_decorative_veneer_furnishings = {
             #+5 Tools (precision cutting)
             goods_input_tools_add = 5
 
-            goods_output_furniture_add = 65
-            goods_output_luxury_furniture_add = 10
+            goods_output_furniture_add = 32
+            goods_output_luxury_furniture_add = 5
         }
         level_scaled = {
             building_employment_shopkeepers_add = 500
@@ -412,7 +412,7 @@ pm_bakelite_and_composite_furniture = {
         
             #+5 Electricity (molding equipment)
             goods_input_electricity_add = 5
-            goods_output_furniture_add = 120
+            goods_output_furniture_add = 60
             
         }
         level_scaled = {
@@ -439,7 +439,7 @@ pm_fourdrinier_machine_adoption = {
     building_modifiers = {
         workforce_scaled = {
             goods_input_tools_add = 5  # Precision tools for machine maintenance  
-            goods_output_paper_add = 30  # Faster production rate  
+            goods_output_paper_add = 15  # Faster production rate  
         }
         level_scaled = {
             building_employment_laborers_add = -2000  
@@ -455,7 +455,7 @@ pm_chlorine_bleaching_process = {
     building_modifiers = {
         workforce_scaled = {
             goods_input_sulfur_add = 10  # Sulfur for chlorine production  
-            goods_output_paper_add = 50  # Higher-quality white paper  
+            goods_output_paper_add = 25  # Higher-quality white paper  
         }
         level_scaled = {
             building_employment_engineers_add = 50  # Chemists for process control  
@@ -471,7 +471,7 @@ pm_kraft_process_development = {
         workforce_scaled = {
             goods_input_sulfur_add = 10  # Increased sulfate use  
             goods_input_electricity_add = 5  # Early electrification of mills  
-            goods_output_paper_add = 80  
+            goods_output_paper_add = 40  
         }
         level_scaled = {
             building_employment_machinists_add = -500  
@@ -487,9 +487,9 @@ pm_synthetic_fiber_integration = {
     building_modifiers = {
         workforce_scaled = {
             goods_input_oil_add = 2  # Petrochemicals for synthetic fibers  
-            goods_output_paper_add = 120 
+            goods_output_paper_add = 60 
             goods_input_electricity_add = 5
-            goods_output_ammunition_add = 10  # Specialty paper for munitions packaging
+            goods_output_ammunition_add = 5  # Specialty paper for munitions packaging
 
               
         }
@@ -510,7 +510,7 @@ pm_corliss_valve_system = {
         workforce_scaled = {
             goods_input_steel_add = 20  # Requires better steel for high-pressure parts  
             goods_input_tools_add = 10  # Precision tools for valve systems  
-            goods_output_engines_add = 50  # +25% vs. base steam engines 
+            goods_output_engines_add = 25  # +25% vs. base steam engines 
         }
         level_scaled = {
             building_employment_laborers_add = -1000  # Skilled workers replace manual labor  
@@ -532,7 +532,7 @@ pm_electrified_conveyor_belts = {
     building_modifiers = {
         workforce_scaled = {
             goods_input_electricity_add = 20  # Requires electrification  
-            goods_output_engines_add = 60  # Streamlined production  
+            goods_output_engines_add = 30  # Streamlined production  
         }
         level_scaled = {
             building_employment_laborers_add = -1000  
@@ -556,8 +556,8 @@ pm_lightweight_steel_alloys = {
             goods_input_electricity_add = 20
             goods_input_rubber_add = 10  # Seals and insulation  
             goods_input_oil_add = 5      # Lubricants for precision parts  
-            goods_output_engines_add = 100  # High-value, lightweight engines 
-            goods_output_automobiles_add = 20
+            goods_output_engines_add = 50  # High-value, lightweight engines 
+            goods_output_automobiles_add = 10
         }
         level_scaled = {
             building_employment_machinists_add = -500  
@@ -580,9 +580,9 @@ pm_robotic_precision_machining = {
         workforce_scaled = {
             goods_input_electricity_add = 40  
             goods_input_tools_add = 20  # Precision tools for robotics  
-            goods_output_engines_add = 150  # Mass production at scale  
+            goods_output_engines_add = 75  # Mass production at scale  
             goods_input_oil_add = 5      # Lubricants for precision parts  
-            goods_output_automobiles_add = 30
+            goods_output_automobiles_add = 15
         }
         level_scaled = {
             building_employment_laborers_add = -1100  
@@ -605,7 +605,7 @@ pm_pasteurization_techniques = {
     building_modifiers = {
         workforce_scaled = {
             goods_input_sulfur_add = 5
-            goods_output_wine_add = 20
+            goods_output_wine_add = 10
         }
         level_scaled = {
             building_employment_machinists_add = 500
@@ -622,7 +622,7 @@ pm_modern_caves_delevage = {
         workforce_scaled = {
             goods_input_steel_add = 2
             goods_input_engines_add = 1
-            goods_output_wine_add = 50
+            goods_output_wine_add = 25
         }
         level_scaled = {
             building_employment_engineers_add = 50
@@ -645,7 +645,7 @@ pm_industrial_viniculture = {
         workforce_scaled = {
             goods_input_engines_add = 5
             goods_input_oil_add = 1
-            goods_output_wine_add = 80
+            goods_output_wine_add = 40
         }
         level_scaled = {
             building_employment_machinists_add = 1000
@@ -662,7 +662,7 @@ pm_selective_breeding = {
     building_modifiers = {
         workforce_scaled = {
             goods_input_grain_add = 2  # Better feed for breeding
-            goods_output_meat_add = 30
+            goods_output_meat_add = 15
         }
         level_scaled = {
             building_employment_farmers_add = 100
@@ -678,7 +678,7 @@ pm_centralized_abattoirs = {
     building_modifiers = {
         workforce_scaled = {
             goods_input_coal_add = 5  # Powering early refrigeration
-            goods_output_meat_add = 50
+            goods_output_meat_add = 25
         }
         level_scaled = {
             building_employment_laborers_add = -1200
@@ -701,8 +701,8 @@ pm_curing_processes = {
         workforce_scaled = {
             goods_input_glass_add = 3  # Packaging
             goods_input_sulfur_add = 2  # Preservatives
-            goods_output_meat_add = 80
-            goods_output_fertilizer_add = 15  # Byproduct from waste
+            goods_output_meat_add = 40
+            goods_output_fertilizer_add = 7  # Byproduct from waste
         }
         level_scaled = {
             building_employment_machinists_add = 500
@@ -718,8 +718,8 @@ pm_conveyor_butchering = {
         workforce_scaled = {
             goods_input_engines_add = 2  # Assembly line equipment
             goods_input_electricity_add = 5
-            goods_output_meat_add = 100
-            goods_output_fertilizer_add = 15
+            goods_output_meat_add = 50
+            goods_output_fertilizer_add = 7
         }
         level_scaled = {
             building_employment_laborers_add = -2000
@@ -737,7 +737,7 @@ pm_tarred_hulls = {
         workforce_scaled = {
             goods_input_wood_add = -10  # Reduced wood usage
             goods_input_coal_add = 5  # Tar production
-            goods_output_clippers_add = 30
+            goods_output_clippers_add = 15
 
             
         }
@@ -759,7 +759,7 @@ pm_ironbraced_shipbuilding = {
             goods_input_iron_add = 10
             goods_input_fabric_add = 10
 
-            goods_output_clippers_add = 65
+            goods_output_clippers_add = 37
         }
         level_scaled = {
             building_employment_machinists_add = 500
@@ -777,7 +777,7 @@ pm_torpedo_gunboats = {
             goods_input_steel_add = 5
             goods_input_explosives_add = 5
             goods_input_engines_add = 10
-            goods_output_ironclads_add = 65
+            goods_output_ironclads_add = 37
         }
         level_scaled = {
 
@@ -794,7 +794,7 @@ pm_turbine_steamers = {
             goods_input_coal_add = 10
             goods_input_engines_add = 5
             goods_input_oil_add = 5
-            goods_output_steamers_add = 40
+            goods_output_steamers_add = 20
             
         }
         level_scaled = {
@@ -819,7 +819,7 @@ pm_welded_prefabs = {
             goods_input_electricity_add = 15
             goods_input_tools_add = 15
 
-            goods_output_steamers_add = 60
+            goods_output_steamers_add = 30
         }
         level_scaled = {
             building_employment_laborers_add = -1000
@@ -839,7 +839,7 @@ pm_cylinder_glass_rolling = {
             goods_input_wood_add = -15  
             goods_input_coal_add = 20  
             # Output: Mass-produced flat glass  
-            goods_output_glass_add = 50 
+            goods_output_glass_add = 25 
         }
         level_scaled = {
             building_employment_laborers_add = -1000  
@@ -864,7 +864,7 @@ pm_regenerative_glass_furnace = {
             goods_input_lead_add = -5  
             goods_input_tools_add = 5  
             # Output: Higher efficiency  
-            goods_output_glass_add = 40  
+            goods_output_glass_add = 20  
         }
         level_scaled = {
             building_employment_laborers_add = -1500  
@@ -883,7 +883,7 @@ pm_glass_pressing_machines = {
             goods_input_oil_add = 5  
             goods_input_lead_add = 10  
             # Output: Diversified goods  
-            goods_output_glass_add = 75 
+            goods_output_glass_add = 37 
         }
         level_scaled = {
             building_employment_laborers_add = -2000  
@@ -908,7 +908,7 @@ pm_float_glass_tinning = {
             goods_input_electricity_add = 10  
             goods_input_sulfur_add = 10  # For tin bath anti-oxidation  
             # Output: High-quality glass with new uses  
-            goods_output_glass_add = 120  
+            goods_output_glass_add = 60  
         }
         level_scaled = {
             building_employment_engineers_add = 500  
@@ -934,7 +934,7 @@ pm_nitrocellulose_propellant = {
             goods_input_fertilizer_add = 15
             goods_input_paper_add = 10
 
-            goods_output_explosives_add = 110
+            goods_output_explosives_add = 55
         }
         level_scaled = {
             building_employment_laborers_add = -1000
@@ -959,7 +959,7 @@ pm_tnt_condensation = {
             goods_input_fertilizer_add = 20
             goods_input_oil_add = 10
 
-            goods_output_explosives_add = 150
+            goods_output_explosives_add = 75
         }
         level_scaled = {
             building_employment_laborers_add = -1500
@@ -978,7 +978,7 @@ pm_haber_process_explosives = {
             goods_input_electricity_add = 20
             goods_input_sulfur_add = -10
 
-            goods_output_explosives_add = 200
+            goods_output_explosives_add = 100
 
         }
         level_scaled = {
@@ -1008,7 +1008,7 @@ pm_nutrient_rich_fertilization = {
     building_modifiers = {
         workforce_scaled = {
             goods_input_fertilizer_add = 8
-            goods_output_silk_add = 40
+            goods_output_silk_add = 20
         }
         level_scaled = {
             building_employment_farmers_add = 1200
@@ -1031,7 +1031,7 @@ pm_coal_tar_colorants = {
         workforce_scaled = {
             goods_input_coal_add = 10
             goods_input_sulfur_add = 5
-            goods_output_dye_add = 80
+            goods_output_dye_add = 40
         }
         level_scaled = {
             building_employment_machinists_add = 1000
@@ -1048,7 +1048,7 @@ pm_precision_steam_reeling = {
         workforce_scaled = {
             goods_input_steel_add = 5
             goods_input_engines_add = 2
-            goods_output_silk_add = 80
+            goods_output_silk_add = 40
         }
         level_scaled = {
             building_employment_machinists_add = 750
@@ -1065,7 +1065,7 @@ pm_cellulose_fiber_synthesis = {
         workforce_scaled = {
             goods_input_paper_add = 5
             goods_input_explosives_add = 5  # (For chemical processing)
-            goods_output_silk_add = 35
+            goods_output_silk_add = 17
         }
         level_scaled = {
             building_employment_engineers_add = 150
@@ -1089,7 +1089,7 @@ pm_acidic_bessemer_conversion = {
           goods_input_iron_add = 55  
           goods_input_coal_add = 20  
           goods_input_sulfur_add = 10  # Sulfur for ore purification  
-          goods_output_steel_add = 105  # +15 vs. Bessemer  
+          goods_output_steel_add = 52  # +15 vs. Bessemer  
         }  
         level_scaled = {  
           building_employment_laborers_add = -500  
@@ -1111,7 +1111,7 @@ pm_nickel_and_steel_armor_plating = {
           goods_input_iron_add = 70  
           goods_input_coal_add = 30  
           goods_input_lead_add = 20  # Represents nickel mining  
-          goods_output_steel_add = 140  # +15 vs. Open Hearth  
+          goods_output_steel_add = 70  # +15 vs. Open Hearth  
         }  
         level_scaled = {  
           building_employment_engineers_add = 300  # Metallurgical expertise  
@@ -1137,7 +1137,7 @@ pm_electrified_rolling_mills = {
             goods_input_coal_add = 20  
             goods_input_electricity_add = 20  
             goods_input_tools_add = 15  # Precision tooling for automation  
-            goods_output_steel_add = 200  # +10 vs. Electric Arc  
+            goods_output_steel_add = 100  # +10 vs. Electric Arc  
         }  
         level_scaled = {  
             building_employment_laborers_add = -1500  
@@ -1155,7 +1155,7 @@ pm_steam_drop_hammers = {
         workforce_scaled = {
             goods_input_coal_add = 10
             goods_input_iron_add = 15
-            goods_output_tools_add = 70
+            goods_output_tools_add = 35
         }
         level_scaled = {
             building_employment_laborers_add = -500
@@ -1176,7 +1176,7 @@ pm_electric_grinding_wheels = {
             goods_input_steel_add = 15
             goods_input_glass_add = 5
 
-            goods_output_tools_add = 100
+            goods_output_tools_add = 50
         }
         level_scaled = {
             building_employment_laborers_add = -1000
@@ -1195,7 +1195,7 @@ pm_tungsten_carbide_tools = {
             goods_input_sulfur_add = 10
             goods_input_oil_add = 5
 
-            goods_output_tools_add = 150
+            goods_output_tools_add = 75
         }
         level_scaled = {
             building_employment_laborers_add = -2000
@@ -1215,7 +1215,7 @@ pm_metallic_cartridge_ammunition = {
             goods_input_lead_add = 15
             goods_input_tools_add = 10
 
-            goods_output_ammunition_add = 80
+            goods_output_ammunition_add = 40
         }
         level_scaled = {
             building_employment_laborers_add = -1000
@@ -1235,7 +1235,7 @@ pm_automatic_weapons = {
             goods_input_oil_add = 5
             goods_input_tools_add = 15
 
-            goods_output_small_arms_add = 120
+            goods_output_small_arms_add = 60
         }
         level_scaled = {
             building_employment_laborers_add = -1500
@@ -1254,7 +1254,7 @@ pm_composite_armor_tanks = {
             goods_input_engines_add = 15
             goods_input_rubber_add = 20
 
-            goods_output_tanks_add = 60
+            goods_output_tanks_add = 30
         }
         level_scaled = {
             building_employment_laborers_add = -2000
@@ -1272,7 +1272,7 @@ pm_paper_cartridges = {
             goods_input_explosives_add = 10
             goods_input_paper_add = 10
 
-            goods_output_ammunition_add = 40
+            goods_output_ammunition_add = 20
         }
         level_scaled = {
             building_employment_laborers_add = -1000
@@ -1291,7 +1291,7 @@ pm_submachine_gun_production = {
             goods_input_rubber_add = 10
             goods_input_tools_add = 5
 
-            goods_output_small_arms_add = 100
+            goods_output_small_arms_add = 50
         }
         level_scaled = {
             building_employment_laborers_add = -1500
@@ -1310,7 +1310,7 @@ pm_clonal_propagation = {
         workforce_scaled = {
             goods_input_tools_add = 5
 
-            goods_output_tea_add = 30
+            goods_output_tea_add = 15
         }
         level_scaled = {
             building_employment_farmers_add = 1000
@@ -1328,7 +1328,7 @@ pm_mechanical_resin_extraction = {
             goods_input_engines_add = 2
             goods_input_coal_add = 5
 
-            goods_output_opium_add = 35
+            goods_output_opium_add = 17
         }
     }
 
@@ -1346,7 +1346,7 @@ pm_shade_grown_polyculture = {
     building_modifiers = {
         workforce_scaled = {
             goods_input_fertilizer_add = 5
-            goods_output_coffee_add = 35
+            goods_output_coffee_add = 17
         }
     }
 
@@ -1366,7 +1366,7 @@ pm_steam_cured_leaves = {
             goods_input_coal_add = 5
             goods_input_glass_add = 5
 
-            goods_output_tobacco_add = 40
+            goods_output_tobacco_add = 20
         }
         level_scaled = {
             building_employment_machinists_add = 250
@@ -1381,7 +1381,7 @@ pm_morphine_refinement = {
     building_modifiers = {
         workforce_scaled = {
             goods_input_sulfur_add = 10
-            goods_output_opium_add = 50
+            goods_output_opium_add = 25
         }
     }
 
@@ -1401,7 +1401,7 @@ pm_nitrogen_flushed_bags = {
             goods_input_paper_add = 5
             goods_input_rubber_add = 5
 
-            goods_output_coffee_add = 50
+            goods_output_coffee_add = 25
         }
     }
 }
@@ -1415,7 +1415,7 @@ pm_electric_grow_lamps = {
             goods_input_electricity_add = 5
             goods_input_glass_add = 5
 
-            goods_output_tobacco_add = 80
+            goods_output_tobacco_add = 40
         }
         level_scaled = {
             building_employment_engineers_add = 200
@@ -1431,7 +1431,7 @@ pm_bioaugmented_cultivation = {
         workforce_scaled = {
             goods_input_fertilizer_add = 10
 
-            goods_output_tea_add = 60
+            goods_output_tea_add = 30
         }
     }
 }

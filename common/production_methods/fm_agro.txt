@@ -5,7 +5,7 @@
 	building_modifiers = {  
 		workforce_scaled = {  
 		  goods_input_fabric_add = 3  # Clover/legumes as a textile input  
-		  goods_output_grain_add = 15  # Increased yield from rotation  
+		  goods_output_grain_add = 7  # Increased yield from rotation  
 		  goods_input_fertilizer_add = -2  # Reduced need for fertilizer  
 		}  
 		level_scaled = {  
@@ -22,7 +22,7 @@ pm_mechanical_reapers = {
 		workforce_scaled = {  
 		  goods_input_tools_add = 3  # Specialized drill parts  
 		  goods_input_steel_add = 1  # Reinforced machinery  
-		  goods_output_grain_add = 40  # Higher efficiency  
+		  goods_output_grain_add = 20  # Higher efficiency  
 		}  
 		level_scaled = {  
 		  building_employment_laborers_add = -1500  # Reduced manual labor  
@@ -38,7 +38,7 @@ pm_hybrid_grains = {
 		workforce_scaled = {  
 		  goods_input_glass_add = 2  # Greenhouses for controlled breeding  
 		  goods_input_paper_add = 1  # Research documentation  
-		  goods_output_grain_add = 55  # Major output boost  
+		  goods_output_grain_add = 27  # Major output boost  
 		}  
 	  }  
 	  state_modifiers = {  
@@ -56,7 +56,7 @@ pm_motorized_pumps = {
 		workforce_scaled = {  
 			goods_input_oil_add = 1  # Fuel for pumps  
 			goods_input_engines_add = 1  # Pump machinery  
-			goods_output_grain_add = 75  # Maximized output  
+			goods_output_grain_add = 37  # Maximized output  
 		}  
 		level_scaled = {  
 			building_employment_laborers_add = -2500  # Fully mechanized  
