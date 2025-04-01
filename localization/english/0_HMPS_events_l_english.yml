@@ -493,6 +493,7 @@
  gm_actions.102.t:0 "Punish"
  gm_actions.102.a:0 "Cancel"
  gm_actions.102.b:0 "Return"
+ gm_actions.102.c:0 "Remove all modifiers"
 
  
  
