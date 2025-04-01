@@ -8631,6 +8631,7 @@ gm_actions.102 = {
 		scope:recipient = {
 			add_modifier = {
 				name = broken_treaty_small_mod
+				months = 60
 			}
 			change_infamy = 15
 		}
@@ -8645,6 +8646,7 @@ gm_actions.102 = {
 		scope:recipient = {
 			add_modifier = {
 				name = broken_treaty_medium_mod
+				months = 60
 			}
 			change_infamy = 20
 		}
@@ -8659,6 +8661,7 @@ gm_actions.102 = {
 		scope:recipient = {
 			add_modifier = {
 				name = broken_treaty_large_mod
+				months = 60
 			}
 			change_infamy = 25
 		}
@@ -8673,6 +8676,7 @@ gm_actions.102 = {
 		scope:recipient = {
 			add_modifier = {
 				name = broken_rule_small_mod
+				months = 60
 			}
 		}
 		trigger_event = {
@@ -8686,6 +8690,7 @@ gm_actions.102 = {
 		scope:recipient = {
 			add_modifier = {
 				name = broken_rule_medium_mod
+				months = 60
 			}
 		}
 		trigger_event = {
@@ -8699,6 +8704,7 @@ gm_actions.102 = {
 		scope:recipient = {
 			add_modifier = {
 				name = broken_rule_large_mod
+				months = 60
 			}
 		}
 		trigger_event = {
@@ -8708,7 +8714,7 @@ gm_actions.102 = {
 		}
 	}
 	option = {
-		name = gm_actions.102.e
+		name = gm_actions.102.c
 		trigger = {
 			scope:recipient = {
 				OR = {
